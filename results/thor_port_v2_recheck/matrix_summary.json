@@ -1,0 +1,65 @@
+{
+  "failures": [],
+  "table": [
+    {
+      "host": "capeam",
+      "split": "valid_unseen",
+      "source": "host",
+      "n": 100,
+      "sr": 0.91,
+      "pickup": 1.0,
+      "put": 0.91,
+      "api_errors": 0
+    },
+    {
+      "host": "capeam",
+      "split": "valid_unseen",
+      "source": "oracle",
+      "n": 100,
+      "sr": 0.91,
+      "pickup": 1.0,
+      "put": 0.91,
+      "api_errors": 0
+    },
+    {
+      "host": "capeam",
+      "split": "valid_unseen",
+      "source": "jev",
+      "n": 100,
+      "sr": 0.91,
+      "pickup": 1.0,
+      "put": 0.91,
+      "api_errors": 0
+    },
+    {
+      "host": "capeam",
+      "split": "valid_unseen",
+      "source": "openai_decisions",
+      "n": 100,
+      "sr": 0.91,
+      "pickup": 1.0,
+      "put": 0.91,
+      "api_errors": 0
+    },
+    {
+      "host": "film",
+      "split": "valid_unseen",
+      "source": "host",
+      "n": 100,
+      "sr": 0.91,
+      "pickup": 1.0,
+      "put": 0.91,
+      "api_errors": 0
+    },
+    {
+      "host": "film",
+      "split": "valid_unseen",
+      "source": "oracle",
+      "n": 100,
+      "sr": 0.91,
+      "pickup": 1.0,
+      "put": 0.91,
+      "api_errors": 0
+    }
+  ]
+}

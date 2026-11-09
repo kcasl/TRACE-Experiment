@@ -1,0 +1,27 @@
+\begin{table}[t]
+\centering
+\caption{Weak-host baseline: official ALFRED protocol~A (10 counted failures, 1000 steps) on FILM / CAPEAM.
+Live TRACE cannot be injected on this 2019 stack (THOR~2.1 / torch~1.6 / Blackwell).
+TRACE on the same host logs is Table~\ref{tab:replay} (Metric-FF planner $C$, $c_{\mathrm{defer}}{=}4$).
+Not comparable to the THOR~5 port in Table~\ref{tab:thor}.}
+\label{tab:official}
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{llcccc}
+\toprule
+Host & Split & $n$ & SR & GC & Steps / fails \\
+\midrule
+\multicolumn{6}{l}{\textit{FILM}}\\
+& seen & 820 & 0.232 & 0.364 & 473 / 6.0 \\
+& seen, oracle & 820 & 0.226 & 0.363 & 476 / 6.0 \\
+& unseen & 821 & 0.205 & 0.334 & 428 / 7.9 \\
+& unseen, oracle & 821 & 0.201 & 0.332 & 428 / 7.9 \\
+\midrule
+\multicolumn{6}{l}{\textit{CAPEAM}}\\
+& seen & 820 & 0.443 & 0.555 & 312 / 4.7 \\
+& seen, oracle & 820 & 0.446 & 0.559 & 309 / 4.7 \\
+& unseen & 821 & 0.390 & 0.493 & 416 / 6.0 \\
+& unseen, oracle & 821 & 0.390 & 0.493 & 413 / 6.1 \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,21 @@
+\begin{table*}[t]
+\centering
+\caption{Planner-extra Put CR on the existing full oct21 tables ($N\ge 2$, $B_{\mathrm{ov}}{=}4$).
+RETURN is charged $B_{\mathrm{ov}}$, not $i_{\mathrm{host}}$ extra; not closed-loop extra.
+Bold is the lowest CR in the column.}
+\label{tab:putcr}
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{lcccccccc}
+\toprule
+& \multicolumn{2}{c}{FILM seen} & \multicolumn{2}{c}{FILM unseen} & \multicolumn{2}{c}{CAPEAM seen} & \multicolumn{2}{c}{CAPEAM unseen} \\
+\cmidrule(lr){2-3} \cmidrule(lr){4-5} \cmidrule(lr){6-7} \cmidrule(lr){8-9}
+Method & CR$\downarrow$ & Wrong$\downarrow$ & CR$\downarrow$ & Wrong$\downarrow$ & CR$\downarrow$ & Wrong$\downarrow$ & CR$\downarrow$ & Wrong$\downarrow$ \\
+\midrule
+Baseline (host) & 2.74 & 0.000 & \textbf{0.44} & 0.000 & 3.41 & 0.260 & 1.92 & 0.372 \\
+Always-return & 3.75 & 0.000 & 3.67 & 0.000 & 3.75 & 0.000 & 3.67 & 0.000 \\
+TRACE + Jev & \textbf{1.67} & 0.259 & 1.38 & 0.098 & \textbf{1.62} & 0.277 & \textbf{1.47} & 0.146 \\
+TRACE + OpenAI & 3.07 & 0.378 & 1.53 & 0.143 & 2.86 & 0.370 & 1.74 & 0.184 \\
+\bottomrule
+\end{tabular}
+\end{table*}

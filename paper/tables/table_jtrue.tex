@@ -1,0 +1,19 @@
+\begin{table}[t]
+\centering
+\caption{Metric-FF inventory and in-list TRACE CR.
+$j_{\mathrm{true}}{=}\mathrm{null}$ means the reference is absent from the candidate list.
+CAPEAM unseen has no Metric-FF log; Put-success CR is in Table~\ref{tab:putcr}.}
+\label{tab:jtrue}
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{lrrrr}
+\toprule
+Split & $N\ge 2$ & In list & Null & In-list CR (Jev / OpenAI) \\
+\midrule
+FILM seen & 92 & 73 & 19 & 0.027 / 0.247 \\
+FILM unseen & 65 & 63 & 2 & 0.127 / 0.063 \\
+CAPEAM seen & 84 & 42 & 42 & 0.000 / 0.000 \\
+CAPEAM unseen & --- & --- & --- & (see Table~\ref{tab:putcr}) \\
+\bottomrule
+\end{tabular}
+\end{table}

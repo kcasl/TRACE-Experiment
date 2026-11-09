@@ -1,0 +1,698 @@
+{
+  "root": "C:\\Project\\ICEIC-2027-ALFRED-Decision\\ryankwon",
+  "deferral_cost": 4.0,
+  "min_n": 2,
+  "splits": {
+    "film/valid_seen": {
+      "inventory": {
+        "n_cost_rows": 625,
+        "N_ge2": 92,
+        "j_true_in_candidates": 73,
+        "j_true_null": 19,
+        "j_true_null_rate": 0.20652173913043478,
+        "all_events_by_action": {
+          "CloseObject": 141,
+          "OpenObject": 6,
+          "PickupObject": 188,
+          "PutObject": 176,
+          "ToggleObjectOff": 113,
+          "ToggleObjectOn": 1
+        },
+        "all_events_by_N": {
+          "N=1": 533,
+          "N>8": 2,
+          "N=2-8": 90
+        },
+        "N_ge2_by_action": {
+          "CloseObject": 30,
+          "PickupObject": 14,
+          "PutObject": 39,
+          "ToggleObjectOff": 9
+        },
+        "N_ge2_by_task": {
+          "pick_and_place_simple": 15,
+          "pick_and_place_with_movable_recep": 3,
+          "pick_clean_then_place_in_recep": 21,
+          "pick_cool_then_place_in_recep": 12,
+          "pick_heat_then_place_in_recep": 6,
+          "pick_two_obj_and_place": 35
+        },
+        "N_ge2_by_N": {
+          "2": 57,
+          "3": 19,
+          "4": 9,
+          "6": 2,
+          "7": 3,
+          "15": 2
+        }
+      },
+      "jev_trace": {
+        "N<=8": {
+          "n": 90,
+          "CR": 0.15555555555555556,
+          "wrong": 0.26666666666666666,
+          "return": 0.05555555555555555,
+          "select": 0.9444444444444444
+        },
+        "N>8": {
+          "n": 2,
+          "CR": 0.0,
+          "wrong": 0.0,
+          "return": 0.0,
+          "select": 1.0
+        },
+        "action=CloseObject": {
+          "n": 30,
+          "CR": 0.0,
+          "wrong": 0.23333333333333334,
+          "return": 0.0,
+          "select": 1.0
+        },
+        "action=PickupObject": {
+          "n": 14,
+          "CR": 0.8571428571428571,
+          "wrong": 0.21428571428571427,
+          "return": 0.35714285714285715,
+          "select": 0.6428571428571429
+        },
+        "action=PutObject": {
+          "n": 39,
+          "CR": 0.05128205128205128,
+          "wrong": 0.2564102564102564,
+          "return": 0.0,
+          "select": 1.0
+        },
+        "action=ToggleObjectOff": {
+          "n": 9,
+          "CR": 0.0,
+          "wrong": 0.4444444444444444,
+          "return": 0.0,
+          "select": 1.0
+        },
+        "all": {
+          "n": 92,
+          "CR": 0.15217391304347827,
+          "wrong": 0.2608695652173913,
+          "return": 0.05434782608695652,
+          "select": 0.9456521739130435
+        },
+        "j_true=in_list": {
+          "n": 73,
+          "CR": 0.0273972602739726,
+          "wrong": 0.1506849315068493,
+          "return": 0.0273972602739726,
+          "select": 0.9726027397260274
+        },
+        "j_true=null": {
+          "n": 19,
+          "CR": 0.631578947368421,
+          "wrong": 0.6842105263157895,
+          "return": 0.15789473684210525,
+          "select": 0.8421052631578947
+        }
+      },
+      "openai_trace": {
+        "N<=8": {
+          "n": 90,
+          "CR": 0.1111111111111111,
+          "wrong": 0.28888888888888886,
+          "return": 0.022222222222222223,
+          "select": 0.9777777777777777
+        },
+        "N>8": {
+          "n": 2,
+          "CR": 4.0,
+          "wrong": 0.5,
+          "return": 0.5,
+          "select": 0.5
+        },
+        "action=CloseObject": {
+          "n": 30,
+          "CR": 0.0,
+          "wrong": 0.23333333333333334,
+          "return": 0.0,
+          "select": 1.0
+        },
+        "action=PickupObject": {
+          "n": 14,
+          "CR": 0.0,
+          "wrong": 0.21428571428571427,
+          "return": 0.14285714285714285,
+          "select": 0.8571428571428571
+        },
+        "action=PutObject": {
+          "n": 39,
+          "CR": 0.46153846153846156,
+          "wrong": 0.3333333333333333,
+          "return": 0.02564102564102564,
+          "select": 0.9743589743589743
+        },
+        "action=ToggleObjectOff": {
+          "n": 9,
+          "CR": 0.0,
+          "wrong": 0.4444444444444444,
+          "return": 0.0,
+          "select": 1.0
+        },
+        "all": {
+          "n": 92,
+          "CR": 0.1956521739130435,
+          "wrong": 0.29347826086956524,
+          "return": 0.03260869565217391,
+          "select": 0.967391304347826
+        },
+        "j_true=in_list": {
+          "n": 73,
+          "CR": 0.2465753424657534,
+          "wrong": 0.1917808219178082,
+          "return": 0.0410958904109589,
+          "select": 0.958904109589041
+        },
+        "j_true=null": {
+          "n": 19,
+          "CR": 0.0,
+          "wrong": 0.6842105263157895,
+          "return": 0.0,
+          "select": 1.0
+        }
+      },
+      "oracle_trace": {
+        "N<=8": {
+          "n": 90,
+          "CR": 0.13333333333333333,
+          "wrong": 0.25555555555555554,
+          "return": 0.05555555555555555,
+          "select": 0.9444444444444444
+        },
+        "N>8": {
+          "n": 2,
+          "CR": 0.0,
+          "wrong": 0.0,
+          "return": 0.0,
+          "select": 1.0
+        },
+        "action=CloseObject": {
+          "n": 30,
+          "CR": 0.0,
+          "wrong": 0.23333333333333334,
+          "return": 0.0,
+          "select": 1.0
+        },
+        "action=PickupObject": {
+          "n": 14,
+          "CR": 0.8571428571428571,
+          "wrong": 0.21428571428571427,
+          "return": 0.35714285714285715,
+          "select": 0.6428571428571429
+        },
+        "action=PutObject": {
+          "n": 39,
+          "CR": 0.0,
+          "wrong": 0.23076923076923078,
+          "return": 0.0,
+          "select": 1.0
+        },
+        "action=ToggleObjectOff": {
+          "n": 9,
+          "CR": 0.0,
+          "wrong": 0.4444444444444444,
+          "return": 0.0,
+          "select": 1.0
+        },
+        "all": {
+          "n": 92,
+          "CR": 0.13043478260869565,
+          "wrong": 0.25,
+          "return": 0.05434782608695652,
+          "select": 0.9456521739130435
+        },
+        "j_true=in_list": {
+          "n": 73,
+          "CR": 0.0,
+          "wrong": 0.136986301369863,
+          "return": 0.0273972602739726,
+          "select": 0.9726027397260274
+        },
+        "j_true=null": {
+          "n": 19,
+          "CR": 0.631578947368421,
+          "wrong": 0.6842105263157895,
+          "return": 0.15789473684210525,
+          "select": 0.8421052631578947
+        }
+      }
+    },
+    "film/valid_unseen": {
+      "inventory": {
+        "n_cost_rows": 441,
+        "N_ge2": 65,
+        "j_true_in_candidates": 63,
+        "j_true_null": 2,
+        "j_true_null_rate": 0.03076923076923077,
+        "all_events_by_action": {
+          "CloseObject": 74,
+          "PickupObject": 173,
+          "PutObject": 91,
+          "ToggleObjectOff": 103
+        },
+        "all_events_by_N": {
+          "N=1": 376,
+          "N=2-8": 65
+        },
+        "N_ge2_by_action": {
+          "CloseObject": 7,
+          "PickupObject": 13,
+          "PutObject": 13,
+          "ToggleObjectOff": 32
+        },
+        "N_ge2_by_task": {
+          "pick_and_place_simple": 3,
+          "pick_clean_then_place_in_recep": 46,
+          "pick_two_obj_and_place": 16
+        },
+        "N_ge2_by_N": {
+          "2": 21,
+          "3": 38,
+          "4": 6
+        }
+      },
+      "jev_trace": {
+        "N<=8": {
+          "n": 65,
+          "CR": 0.24615384615384617,
+          "wrong": 0.03076923076923077,
+          "return": 0.03076923076923077,
+          "select": 0.9692307692307692
+        },
+        "action=CloseObject": {
+          "n": 7,
+          "CR": 0.5714285714285714,
+          "wrong": 0.0,
+          "return": 0.0,
+          "select": 1.0
+        },
+        "action=PickupObject": {
+          "n": 13,
+          "CR": 0.9230769230769231,
+          "wrong": 0.15384615384615385,
+          "return": 0.15384615384615385,
+          "select": 0.8461538461538461
+        },
+        "action=PutObject": {
+          "n": 13,
+          "CR": 0.0,
+          "wrong": 0.0,
+          "return": 0.0,
+          "select": 1.0
+        },
+        "action=ToggleObjectOff": {
+          "n": 32,
+          "CR": 0.0,
+          "wrong": 0.0,
+          "return": 0.0,
+          "select": 1.0
+        },
+        "all": {
+          "n": 65,
+          "CR": 0.24615384615384617,
+          "wrong": 0.03076923076923077,
+          "return": 0.03076923076923077,
+          "select": 0.9692307692307692
+        },
+        "j_true=in_list": {
+          "n": 63,
+          "CR": 0.12698412698412698,
+          "wrong": 0.031746031746031744,
+          "return": 0.0,
+          "select": 1.0
+        },
+        "j_true=null": {
+          "n": 2,
+          "CR": 4.0,
+          "wrong": 0.0,
+          "return": 1.0,
+          "select": 0.0
+        }
+      },
+      "openai_trace": {
+        "N<=8": {
+          "n": 65,
+          "CR": 0.18461538461538463,
+          "wrong": 0.0,
+          "return": 0.03076923076923077,
+          "select": 0.9692307692307692
+        },
+        "action=CloseObject": {
+          "n": 7,
+          "CR": 0.5714285714285714,
+          "wrong": 0.0,
+          "return": 0.0,
+          "select": 1.0
+        },
+        "action=PickupObject": {
+          "n": 13,
+          "CR": 0.6153846153846154,
+          "wrong": 0.0,
+          "return": 0.15384615384615385,
+          "select": 0.8461538461538461
+        },
+        "action=PutObject": {
+          "n": 13,
+          "CR": 0.0,
+          "wrong": 0.0,
+          "return": 0.0,
+          "select": 1.0
+        },
+        "action=ToggleObjectOff": {
+          "n": 32,
+          "CR": 0.0,
+          "wrong": 0.0,
+          "return": 0.0,
+          "select": 1.0
+        },
+        "all": {
+          "n": 65,
+          "CR": 0.18461538461538463,
+          "wrong": 0.0,
+          "return": 0.03076923076923077,
+          "select": 0.9692307692307692
+        },
+        "j_true=in_list": {
+          "n": 63,
+          "CR": 0.06349206349206349,
+          "wrong": 0.0,
+          "return": 0.0,
+          "select": 1.0
+        },
+        "j_true=null": {
+          "n": 2,
+          "CR": 4.0,
+          "wrong": 0.0,
+          "return": 1.0,
+          "select": 0.0
+        }
+      },
+      "oracle_trace": {
+        "N<=8": {
+          "n": 65,
+          "CR": 0.12307692307692308,
+          "wrong": 0.06153846153846154,
+          "return": 0.03076923076923077,
+          "select": 0.9692307692307692
+        },
+        "action=CloseObject": {
+          "n": 7,
+          "CR": 0.0,
+          "wrong": 0.5714285714285714,
+          "return": 0.0,
+          "select": 1.0
+        },
+        "action=PickupObject": {
+          "n": 13,
+          "CR": 0.6153846153846154,
+          "wrong": 0.0,
+          "return": 0.15384615384615385,
+          "select": 0.8461538461538461
+        },
+        "action=PutObject": {
+          "n": 13,
+          "CR": 0.0,
+          "wrong": 0.0,
+          "return": 0.0,
+          "select": 1.0
+        },
+        "action=ToggleObjectOff": {
+          "n": 32,
+          "CR": 0.0,
+          "wrong": 0.0,
+          "return": 0.0,
+          "select": 1.0
+        },
+        "all": {
+          "n": 65,
+          "CR": 0.12307692307692308,
+          "wrong": 0.06153846153846154,
+          "return": 0.03076923076923077,
+          "select": 0.9692307692307692
+        },
+        "j_true=in_list": {
+          "n": 63,
+          "CR": 0.0,
+          "wrong": 0.06349206349206349,
+          "return": 0.0,
+          "select": 1.0
+        },
+        "j_true=null": {
+          "n": 2,
+          "CR": 4.0,
+          "wrong": 0.0,
+          "return": 1.0,
+          "select": 0.0
+        }
+      }
+    },
+    "capeam/valid_seen": {
+      "inventory": {
+        "n_cost_rows": 615,
+        "N_ge2": 84,
+        "j_true_in_candidates": 42,
+        "j_true_null": 42,
+        "j_true_null_rate": 0.5,
+        "all_events_by_action": {
+          "CloseObject": 110,
+          "PickupObject": 126,
+          "PutObject": 305,
+          "ToggleObjectOff": 71,
+          "ToggleObjectOn": 3
+        },
+        "all_events_by_N": {
+          "N=1": 531,
+          "N=2-8": 82,
+          "N>8": 2
+        },
+        "N_ge2_by_action": {
+          "CloseObject": 16,
+          "PickupObject": 10,
+          "PutObject": 50,
+          "ToggleObjectOff": 8
+        },
+        "N_ge2_by_task": {
+          "pick_and_place_simple": 2,
+          "pick_and_place_with_movable_recep": 2,
+          "pick_clean_then_place_in_recep": 20,
+          "pick_cool_then_place_in_recep": 15,
+          "pick_heat_then_place_in_recep": 9,
+          "pick_two_obj_and_place": 36
+        },
+        "N_ge2_by_N": {
+          "2": 52,
+          "3": 11,
+          "4": 3,
+          "6": 9,
+          "8": 7,
+          "16": 2
+        }
+      },
+      "jev_trace": {
+        "N<=8": {
+          "n": 82,
+          "CR": 0.012195121951219513,
+          "wrong": 0.5,
+          "return": 0.0,
+          "select": 1.0
+        },
+        "N>8": {
+          "n": 2,
+          "CR": 0.0,
+          "wrong": 1.0,
+          "return": 0.0,
+          "select": 1.0
+        },
+        "action=CloseObject": {
+          "n": 16,
+          "CR": 0.0,
+          "wrong": 0.4375,
+          "return": 0.0,
+          "select": 1.0
+        },
+        "action=PickupObject": {
+          "n": 10,
+          "CR": 0.0,
+          "wrong": 0.3,
+          "return": 0.0,
+          "select": 1.0
+        },
+        "action=PutObject": {
+          "n": 50,
+          "CR": 0.02,
+          "wrong": 0.52,
+          "return": 0.0,
+          "select": 1.0
+        },
+        "action=ToggleObjectOff": {
+          "n": 8,
+          "CR": 0.0,
+          "wrong": 0.875,
+          "return": 0.0,
+          "select": 1.0
+        },
+        "all": {
+          "n": 84,
+          "CR": 0.011904761904761904,
+          "wrong": 0.5119047619047619,
+          "return": 0.0,
+          "select": 1.0
+        },
+        "j_true=in_list": {
+          "n": 42,
+          "CR": 0.0,
+          "wrong": 0.16666666666666666,
+          "return": 0.0,
+          "select": 1.0
+        },
+        "j_true=null": {
+          "n": 42,
+          "CR": 0.023809523809523808,
+          "wrong": 0.8571428571428571,
+          "return": 0.0,
+          "select": 1.0
+        }
+      },
+      "openai_trace": {
+        "N<=8": {
+          "n": 82,
+          "CR": 0.012195121951219513,
+          "wrong": 0.5,
+          "return": 0.0,
+          "select": 1.0
+        },
+        "N>8": {
+          "n": 2,
+          "CR": 0.0,
+          "wrong": 1.0,
+          "return": 0.0,
+          "select": 1.0
+        },
+        "action=CloseObject": {
+          "n": 16,
+          "CR": 0.0,
+          "wrong": 0.4375,
+          "return": 0.0,
+          "select": 1.0
+        },
+        "action=PickupObject": {
+          "n": 10,
+          "CR": 0.0,
+          "wrong": 0.3,
+          "return": 0.0,
+          "select": 1.0
+        },
+        "action=PutObject": {
+          "n": 50,
+          "CR": 0.02,
+          "wrong": 0.52,
+          "return": 0.0,
+          "select": 1.0
+        },
+        "action=ToggleObjectOff": {
+          "n": 8,
+          "CR": 0.0,
+          "wrong": 0.875,
+          "return": 0.0,
+          "select": 1.0
+        },
+        "all": {
+          "n": 84,
+          "CR": 0.011904761904761904,
+          "wrong": 0.5119047619047619,
+          "return": 0.0,
+          "select": 1.0
+        },
+        "j_true=in_list": {
+          "n": 42,
+          "CR": 0.0,
+          "wrong": 0.16666666666666666,
+          "return": 0.0,
+          "select": 1.0
+        },
+        "j_true=null": {
+          "n": 42,
+          "CR": 0.023809523809523808,
+          "wrong": 0.8571428571428571,
+          "return": 0.0,
+          "select": 1.0
+        }
+      },
+      "oracle_trace": {
+        "N<=8": {
+          "n": 82,
+          "CR": 0.0,
+          "wrong": 0.5,
+          "return": 0.0,
+          "select": 1.0
+        },
+        "N>8": {
+          "n": 2,
+          "CR": 0.0,
+          "wrong": 1.0,
+          "return": 0.0,
+          "select": 1.0
+        },
+        "action=CloseObject": {
+          "n": 16,
+          "CR": 0.0,
+          "wrong": 0.4375,
+          "return": 0.0,
+          "select": 1.0
+        },
+        "action=PickupObject": {
+          "n": 10,
+          "CR": 0.0,
+          "wrong": 0.3,
+          "return": 0.0,
+          "select": 1.0
+        },
+        "action=PutObject": {
+          "n": 50,
+          "CR": 0.0,
+          "wrong": 0.52,
+          "return": 0.0,
+          "select": 1.0
+        },
+        "action=ToggleObjectOff": {
+          "n": 8,
+          "CR": 0.0,
+          "wrong": 0.875,
+          "return": 0.0,
+          "select": 1.0
+        },
+        "all": {
+          "n": 84,
+          "CR": 0.0,
+          "wrong": 0.5119047619047619,
+          "return": 0.0,
+          "select": 1.0
+        },
+        "j_true=in_list": {
+          "n": 42,
+          "CR": 0.0,
+          "wrong": 0.16666666666666666,
+          "return": 0.0,
+          "select": 1.0
+        },
+        "j_true=null": {
+          "n": 42,
+          "CR": 0.0,
+          "wrong": 0.8571428571428571,
+          "return": 0.0,
+          "select": 1.0
+        }
+      }
+    },
+    "capeam/valid_unseen": {
+      "error": "missing logs",
+      "costs": "C:\\Project\\ICEIC-2027-ALFRED-Decision\\ryankwon\\results\\offline\\capeam\\valid_unseen_host_v2_cand\\costs.jsonl",
+      "beliefs": "C:\\Project\\ICEIC-2027-ALFRED-Decision\\ryankwon\\results\\beliefs\\capeam\\valid_unseen_host_v2"
+    }
+  }
+}

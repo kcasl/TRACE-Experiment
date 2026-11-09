@@ -1,0 +1,18 @@
+\begin{table}[t]
+\centering
+\caption{Synthetic identity: Jev vs.\ OpenAI Decisions on the same three drawings.
+Identity accuracy $1.00$ both; top-1 agree $1.00$; mean $L_1(p_{\mathrm{Jev}},p_{\mathrm{OpenAI}}){=}0.36$.
+TRACE actions agree on all three cost worlds.}
+\label{tab:identity}
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{lcccc}
+\toprule
+Case & Truth & Jev $p$ & OpenAI $p$ & $L_1$ \\
+\midrule
+visible match & 0 & $(0.98,0.00,0.02)$ & $(0.98,0.01,0.01)$ & 0.02 \\
+reference absent & 2 & $(0.11,0.01,0.88)$ & $(0.38,0.06,0.56)$ & 0.64 \\
+lookalike & 0 & $(0.74,0.21,0.05)$ & $(0.95,0.03,0.02)$ & 0.42 \\
+\bottomrule
+\end{tabular}
+\end{table}

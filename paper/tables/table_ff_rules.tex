@@ -1,0 +1,18 @@
+\begin{table}[t]
+\centering
+\caption{Same Jev belief, only the decision rule changes (Metric-FF $C$, FILM valid\_seen, $n{=}92$; host-score $n{=}38$).
+Unrec.\ is the rate of SELECT into an unreachable $(i,j_{\mathrm{true}})$.}
+\label{tab:ffrules}
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{lcccc}
+\toprule
+Rule & CR$\downarrow$ & Wrong$\downarrow$ & Return & Unrec.$\downarrow$ \\
+\midrule
+TRACE (ours) & \textbf{0.152} & 0.261 & 0.054 & \textbf{0.000} \\
+threshold $\tau{=}0.5$ & 3.424 & 0.141 & 0.207 & 0.022 \\
+force-best & 2.707 & 0.272 & 0.000 & 0.022 \\
+host score & 5.474 & 0.211 & 0.000 & 0.053 \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,114 @@
+{
+  "belief": [
+    0.6,
+    0.4,
+    0.0
+  ],
+  "deferral_cost": 4.0,
+  "scenes": [
+    {
+      "scene": "same_room_drawers",
+      "action": "PutObject",
+      "candidate_ids": [
+        "drawer_a",
+        "drawer_b"
+      ],
+      "regret_matrix": [
+        [
+          0.0,
+          2.0,
+          2.0
+        ],
+        [
+          2.0,
+          0.0,
+          2.0
+        ]
+      ],
+      "expected_regret": [
+        0.8,
+        1.2
+      ],
+      "argmin_regret": 0,
+      "trace_action": "SELECT"
+    },
+    {
+      "scene": "far_fridge",
+      "action": "PutObject",
+      "candidate_ids": [
+        "fridge_here",
+        "fridge_far"
+      ],
+      "regret_matrix": [
+        [
+          0.0,
+          2.0,
+          2.0
+        ],
+        [
+          22.0,
+          0.0,
+          12.0
+        ]
+      ],
+      "expected_regret": [
+        0.8,
+        13.2
+      ],
+      "argmin_regret": 0,
+      "trace_action": "SELECT"
+    },
+    {
+      "scene": "split_fridges",
+      "action": "PutObject",
+      "candidate_ids": [
+        "fridge_a",
+        "fridge_b"
+      ],
+      "regret_matrix": [
+        [
+          0.0,
+          12.0,
+          12.0
+        ],
+        [
+          12.0,
+          0.0,
+          12.0
+        ]
+      ],
+      "expected_regret": [
+        4.8,
+        7.2
+      ],
+      "argmin_regret": 0,
+      "trace_action": "RETURN"
+    },
+    {
+      "scene": "open_drawers_to_close",
+      "action": "CloseObject",
+      "candidate_ids": [
+        "drawer_a",
+        "drawer_b"
+      ],
+      "regret_matrix": [
+        [
+          0.0,
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "expected_regret": [
+        0.4,
+        0.6
+      ],
+      "argmin_regret": 0,
+      "trace_action": "SELECT"
+    }
+  ]
+}

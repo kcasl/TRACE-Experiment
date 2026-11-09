@@ -1,0 +1,10 @@
+[project]
+name = "trace-alfred"
+version = "0.1.0"
+description = "TRACE: task-regret-aware instance association for embodied instruction following"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24", "pillow>=10"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

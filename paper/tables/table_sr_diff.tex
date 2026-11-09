@@ -1,0 +1,19 @@
+\begin{table}[t]
+\centering
+\caption{Closed-loop SR vs.\ the same-row host.
+$+ep$ / $-ep$ are host-fail $\to$ TRACE-success and host-success $\to$ TRACE-fail; net in parentheses.}
+\label{tab:srdiff}
+\scriptsize
+\setlength{\tabcolsep}{2pt}
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{@{}llccccc@{}}
+\toprule
+Host & Split & Host & Jev & OpenAI & Jev $\Delta$ & OpenAI $\Delta$ \\
+\midrule
+FILM & seen & 0.500 & 0.598 & \textbf{0.633} & $+81/-1$ ($+80$) & $+110/-1$ ($+109$) \\
+FILM & unseen & 0.614 & 0.638 & \textbf{0.642} & $+21/-1$ ($+20$) & $+24/-1$ ($+23$) \\
+CAPEAM & seen & 0.528 & 0.623 & \textbf{0.652} & $+81/-3$ ($+78$) & $+106/-4$ ($+102$) \\
+CAPEAM & unseen & 0.629 & 0.654 & \textbf{0.655} & $+22/-1$ ($+21$) & $+28/-6$ ($+22$) \\
+\bottomrule
+\end{tabular}}
+\end{table}

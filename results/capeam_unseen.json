@@ -1,0 +1,1222 @@
+{
+  "critic": "Put success-valued C from logged p (no Metric-FF)",
+  "splits": {
+    "capeam/valid_unseen": {
+      "directory": "C:\\Project\\ICEIC-ALFRED\\jw\\results\\thor_port_v2\\capeam\\valid_unseen",
+      "n_files": 4,
+      "sources": {
+        "host": {
+          "n": 100,
+          "sr": 0.91,
+          "pickup": 1.0,
+          "put": 0.91,
+          "fails": [
+            {
+              "idx": 21,
+              "floor": "FloorPlan219",
+              "target": "Vase",
+              "parent": "Safe",
+              "task_id": "trial_T20190908_205246_776817"
+            },
+            {
+              "idx": 22,
+              "floor": "FloorPlan219",
+              "target": "Vase",
+              "parent": "Safe",
+              "task_id": "trial_T20190908_205246_776817"
+            },
+            {
+              "idx": 23,
+              "floor": "FloorPlan219",
+              "target": "Vase",
+              "parent": "Safe",
+              "task_id": "trial_T20190908_205246_776817"
+            },
+            {
+              "idx": 54,
+              "floor": "FloorPlan219",
+              "target": "Vase",
+              "parent": "Safe",
+              "task_id": "trial_T20190908_205204_244321"
+            },
+            {
+              "idx": 55,
+              "floor": "FloorPlan219",
+              "target": "Vase",
+              "parent": "Safe",
+              "task_id": "trial_T20190908_205204_244321"
+            },
+            {
+              "idx": 56,
+              "floor": "FloorPlan219",
+              "target": "Vase",
+              "parent": "Safe",
+              "task_id": "trial_T20190908_205204_244321"
+            },
+            {
+              "idx": 87,
+              "floor": "FloorPlan219",
+              "target": "Vase",
+              "parent": "Safe",
+              "task_id": "trial_T20190908_205221_748352"
+            },
+            {
+              "idx": 88,
+              "floor": "FloorPlan219",
+              "target": "Vase",
+              "parent": "Safe",
+              "task_id": "trial_T20190908_205221_748352"
+            },
+            {
+              "idx": 89,
+              "floor": "FloorPlan219",
+              "target": "Vase",
+              "parent": "Safe",
+              "task_id": "trial_T20190908_205221_748352"
+            }
+          ],
+          "fail_idxs": [
+            21,
+            22,
+            23,
+            54,
+            55,
+            56,
+            87,
+            88,
+            89
+          ],
+          "trace": {
+            "n_events": 63,
+            "return": 63,
+            "select": 0,
+            "selects": [],
+            "rebuild_n": 0,
+            "rebuild_match": 0,
+            "rebuild_match_rate": 1.0,
+            "actions": {
+              "PutObject": 63
+            }
+          }
+        },
+        "oracle": {
+          "n": 100,
+          "sr": 0.91,
+          "pickup": 1.0,
+          "put": 0.91,
+          "fails": [
+            {
+              "idx": 21,
+              "floor": "FloorPlan219",
+              "target": "Vase",
+              "parent": "Safe",
+              "task_id": "trial_T20190908_205246_776817"
+            },
+            {
+              "idx": 22,
+              "floor": "FloorPlan219",
+              "target": "Vase",
+              "parent": "Safe",
+              "task_id": "trial_T20190908_205246_776817"
+            },
+            {
+              "idx": 23,
+              "floor": "FloorPlan219",
+              "target": "Vase",
+              "parent": "Safe",
+              "task_id": "trial_T20190908_205246_776817"
+            },
+            {
+              "idx": 54,
+              "floor": "FloorPlan219",
+              "target": "Vase",
+              "parent": "Safe",
+              "task_id": "trial_T20190908_205204_244321"
+            },
+            {
+              "idx": 55,
+              "floor": "FloorPlan219",
+              "target": "Vase",
+              "parent": "Safe",
+              "task_id": "trial_T20190908_205204_244321"
+            },
+            {
+              "idx": 56,
+              "floor": "FloorPlan219",
+              "target": "Vase",
+              "parent": "Safe",
+              "task_id": "trial_T20190908_205204_244321"
+            },
+            {
+              "idx": 87,
+              "floor": "FloorPlan219",
+              "target": "Vase",
+              "parent": "Safe",
+              "task_id": "trial_T20190908_205221_748352"
+            },
+            {
+              "idx": 88,
+              "floor": "FloorPlan219",
+              "target": "Vase",
+              "parent": "Safe",
+              "task_id": "trial_T20190908_205221_748352"
+            },
+            {
+              "idx": 89,
+              "floor": "FloorPlan219",
+              "target": "Vase",
+              "parent": "Safe",
+              "task_id": "trial_T20190908_205221_748352"
+            }
+          ],
+          "fail_idxs": [
+            21,
+            22,
+            23,
+            54,
+            55,
+            56,
+            87,
+            88,
+            89
+          ],
+          "trace": {
+            "n_events": 63,
+            "return": 63,
+            "select": 0,
+            "selects": [],
+            "rebuild_n": 0,
+            "rebuild_match": 0,
+            "rebuild_match_rate": 1.0,
+            "actions": {
+              "PutObject": 63
+            }
+          },
+          "vs_host": {
+            "pickup_id_diff": 0,
+            "put_id_diff": 24,
+            "gained": 0,
+            "lost": 0,
+            "id_diffs": [
+              {
+                "idx": 0,
+                "floor": "FloorPlan10",
+                "pickup_changed": false,
+                "put_changed": true,
+                "host_success": true,
+                "other_success": true
+              },
+              {
+                "idx": 1,
+                "floor": "FloorPlan10",
+                "pickup_changed": false,
+                "put_changed": true,
+                "host_success": true,
+                "other_success": true
+              },
+              {
+                "idx": 2,
+                "floor": "FloorPlan10",
+                "pickup_changed": false,
+                "put_changed": true,
+                "host_success": true,
+                "other_success": true
+              },
+              {
+                "idx": 12,
+                "floor": "FloorPlan10",
+                "pickup_changed": false,
+                "put_changed": true,
+                "host_success": true,
+                "other_success": true
+              },
+              {
+                "idx": 13,
+                "floor": "FloorPlan10",
+                "pickup_changed": false,
+                "put_changed": true,
+                "host_success": true,
+                "other_success": true
+              },
+              {
+                "idx": 14,
+                "floor": "FloorPlan10",
+                "pickup_changed": false,
+                "put_changed": true,
+                "host_success": true,
+                "other_success": true
+              },
+              {
+                "idx": 39,
+                "floor": "FloorPlan10",
+                "pickup_changed": false,
+                "put_changed": true,
+                "host_success": true,
+                "other_success": true
+              },
+              {
+                "idx": 40,
+                "floor": "FloorPlan10",
+                "pickup_changed": false,
+                "put_changed": true,
+                "host_success": true,
+                "other_success": true
+              },
+              {
+                "idx": 41,
+                "floor": "FloorPlan10",
+                "pickup_changed": false,
+                "put_changed": true,
+                "host_success": true,
+                "other_success": true
+              },
+              {
+                "idx": 42,
+                "floor": "FloorPlan10",
+                "pickup_changed": false,
+                "put_changed": true,
+                "host_success": true,
+                "other_success": true
+              },
+              {
+                "idx": 43,
+                "floor": "FloorPlan10",
+                "pickup_changed": false,
+                "put_changed": true,
+                "host_success": true,
+                "other_success": true
+              },
+              {
+                "idx": 44,
+                "floor": "FloorPlan10",
+                "pickup_changed": false,
+                "put_changed": true,
+                "host_success": true,
+                "other_success": true
+              },
+              {
+                "idx": 69,
+                "floor": "FloorPlan10",
+                "pickup_changed": false,
+                "put_changed": true,
+                "host_success": true,
+                "other_success": true
+              },
+              {
+                "idx": 70,
+                "floor": "FloorPlan10",
+                "pickup_changed": false,
+                "put_changed": true,
+                "host_success": true,
+                "other_success": true
+              },
+              {
+                "idx": 71,
+                "floor": "FloorPlan10",
+                "pickup_changed": false,
+                "put_changed": true,
+                "host_success": true,
+                "other_success": true
+              },
+              {
+                "idx": 72,
+                "floor": "FloorPlan10",
+                "pickup_changed": false,
+                "put_changed": true,
+                "host_success": true,
+                "other_success": true
+              },
+              {
+                "idx": 73,
+                "floor": "FloorPlan10",
+                "pickup_changed": false,
+                "put_changed": true,
+                "host_success": true,
+                "other_success": true
+              },
+              {
+                "idx": 74,
+                "floor": "FloorPlan10",
+                "pickup_changed": false,
+                "put_changed": true,
+                "host_success": true,
+                "other_success": true
+              },
+              {
+                "idx": 84,
+                "floor": "FloorPlan10",
+                "pickup_changed": false,
+                "put_changed": true,
+                "host_success": true,
+                "other_success": true
+              },
+              {
+                "idx": 85,
+                "floor": "FloorPlan10",
+                "pickup_changed": false,
+                "put_changed": true,
+                "host_success": true,
+                "other_success": true
+              },
+              {
+                "idx": 86,
+                "floor": "FloorPlan10",
+                "pickup_changed": false,
+                "put_changed": true,
+                "host_success": true,
+                "other_success": true
+              },
+              {
+                "idx": 94,
+                "floor": "FloorPlan10",
+                "pickup_changed": false,
+                "put_changed": true,
+                "host_success": true,
+                "other_success": true
+              },
+              {
+                "idx": 95,
+                "floor": "FloorPlan10",
+                "pickup_changed": false,
+                "put_changed": true,
+                "host_success": true,
+                "other_success": true
+              },
+              {
+                "idx": 96,
+                "floor": "FloorPlan10",
+                "pickup_changed": false,
+                "put_changed": true,
+                "host_success": true,
+                "other_success": true
+              }
+            ]
+          }
+        },
+        "jev": {
+          "n": 100,
+          "sr": 0.91,
+          "pickup": 1.0,
+          "put": 0.91,
+          "fails": [
+            {
+              "idx": 21,
+              "floor": "FloorPlan219",
+              "target": "Vase",
+              "parent": "Safe",
+              "task_id": "trial_T20190908_205246_776817"
+            },
+            {
+              "idx": 22,
+              "floor": "FloorPlan219",
+              "target": "Vase",
+              "parent": "Safe",
+              "task_id": "trial_T20190908_205246_776817"
+            },
+            {
+              "idx": 23,
+              "floor": "FloorPlan219",
+              "target": "Vase",
+              "parent": "Safe",
+              "task_id": "trial_T20190908_205246_776817"
+            },
+            {
+              "idx": 54,
+              "floor": "FloorPlan219",
+              "target": "Vase",
+              "parent": "Safe",
+              "task_id": "trial_T20190908_205204_244321"
+            },
+            {
+              "idx": 55,
+              "floor": "FloorPlan219",
+              "target": "Vase",
+              "parent": "Safe",
+              "task_id": "trial_T20190908_205204_244321"
+            },
+            {
+              "idx": 56,
+              "floor": "FloorPlan219",
+              "target": "Vase",
+              "parent": "Safe",
+              "task_id": "trial_T20190908_205204_244321"
+            },
+            {
+              "idx": 87,
+              "floor": "FloorPlan219",
+              "target": "Vase",
+              "parent": "Safe",
+              "task_id": "trial_T20190908_205221_748352"
+            },
+            {
+              "idx": 88,
+              "floor": "FloorPlan219",
+              "target": "Vase",
+              "parent": "Safe",
+              "task_id": "trial_T20190908_205221_748352"
+            },
+            {
+              "idx": 89,
+              "floor": "FloorPlan219",
+              "target": "Vase",
+              "parent": "Safe",
+              "task_id": "trial_T20190908_205221_748352"
+            }
+          ],
+          "fail_idxs": [
+            21,
+            22,
+            23,
+            54,
+            55,
+            56,
+            87,
+            88,
+            89
+          ],
+          "trace": {
+            "n_events": 63,
+            "return": 62,
+            "select": 1,
+            "selects": [
+              {
+                "idx": 36,
+                "floor": "FloorPlan10",
+                "action": "PutObject",
+                "n": 8,
+                "relation": "SAME",
+                "defer": false,
+                "reason": "regret_below_deferral",
+                "logged_select": true,
+                "ok": true,
+                "ep_success": true,
+                "id": "Cabinet|+00.65|+00.48|+00.24",
+                "pmax": 0.97,
+                "rebuilt": {
+                  "action": "SELECT",
+                  "idx": 0,
+                  "reason": "regret_below_deferral",
+                  "pmax": 0.97,
+                  "p_none": 0.02
+                },
+                "match": true
+              }
+            ],
+            "rebuild_n": 63,
+            "rebuild_match": 63,
+            "rebuild_match_rate": 1.0,
+            "actions": {
+              "PutObject": 63
+            }
+          },
+          "vs_host": {
+            "pickup_id_diff": 0,
+            "put_id_diff": 0,
+            "gained": 0,
+            "lost": 0,
+            "id_diffs": []
+          }
+        },
+        "openai_decisions": {
+          "n": 100,
+          "sr": 0.91,
+          "pickup": 1.0,
+          "put": 0.91,
+          "fails": [
+            {
+              "idx": 21,
+              "floor": "FloorPlan219",
+              "target": "Vase",
+              "parent": "Safe",
+              "task_id": "trial_T20190908_205246_776817"
+            },
+            {
+              "idx": 22,
+              "floor": "FloorPlan219",
+              "target": "Vase",
+              "parent": "Safe",
+              "task_id": "trial_T20190908_205246_776817"
+            },
+            {
+              "idx": 23,
+              "floor": "FloorPlan219",
+              "target": "Vase",
+              "parent": "Safe",
+              "task_id": "trial_T20190908_205246_776817"
+            },
+            {
+              "idx": 54,
+              "floor": "FloorPlan219",
+              "target": "Vase",
+              "parent": "Safe",
+              "task_id": "trial_T20190908_205204_244321"
+            },
+            {
+              "idx": 55,
+              "floor": "FloorPlan219",
+              "target": "Vase",
+              "parent": "Safe",
+              "task_id": "trial_T20190908_205204_244321"
+            },
+            {
+              "idx": 56,
+              "floor": "FloorPlan219",
+              "target": "Vase",
+              "parent": "Safe",
+              "task_id": "trial_T20190908_205204_244321"
+            },
+            {
+              "idx": 87,
+              "floor": "FloorPlan219",
+              "target": "Vase",
+              "parent": "Safe",
+              "task_id": "trial_T20190908_205221_748352"
+            },
+            {
+              "idx": 88,
+              "floor": "FloorPlan219",
+              "target": "Vase",
+              "parent": "Safe",
+              "task_id": "trial_T20190908_205221_748352"
+            },
+            {
+              "idx": 89,
+              "floor": "FloorPlan219",
+              "target": "Vase",
+              "parent": "Safe",
+              "task_id": "trial_T20190908_205221_748352"
+            }
+          ],
+          "fail_idxs": [
+            21,
+            22,
+            23,
+            54,
+            55,
+            56,
+            87,
+            88,
+            89
+          ],
+          "trace": {
+            "n_events": 63,
+            "return": 63,
+            "select": 0,
+            "selects": [],
+            "rebuild_n": 63,
+            "rebuild_match": 63,
+            "rebuild_match_rate": 1.0,
+            "actions": {
+              "PutObject": 63
+            }
+          },
+          "vs_host": {
+            "pickup_id_diff": 0,
+            "put_id_diff": 0,
+            "gained": 0,
+            "lost": 0,
+            "id_diffs": []
+          }
+        }
+      },
+      "expected_n": 100
+    },
+    "capeam/valid_unseen_recheck": {
+      "directory": "C:\\Project\\ICEIC-ALFRED\\jw\\results\\thor_port_v2_recheck\\capeam\\valid_unseen",
+      "n_files": 4,
+      "sources": {
+        "host": {
+          "n": 100,
+          "sr": 0.91,
+          "pickup": 1.0,
+          "put": 0.91,
+          "fails": [
+            {
+              "idx": 21,
+              "floor": "FloorPlan219",
+              "target": "Vase",
+              "parent": "Safe",
+              "task_id": "trial_T20190908_205246_776817"
+            },
+            {
+              "idx": 22,
+              "floor": "FloorPlan219",
+              "target": "Vase",
+              "parent": "Safe",
+              "task_id": "trial_T20190908_205246_776817"
+            },
+            {
+              "idx": 23,
+              "floor": "FloorPlan219",
+              "target": "Vase",
+              "parent": "Safe",
+              "task_id": "trial_T20190908_205246_776817"
+            },
+            {
+              "idx": 54,
+              "floor": "FloorPlan219",
+              "target": "Vase",
+              "parent": "Safe",
+              "task_id": "trial_T20190908_205204_244321"
+            },
+            {
+              "idx": 55,
+              "floor": "FloorPlan219",
+              "target": "Vase",
+              "parent": "Safe",
+              "task_id": "trial_T20190908_205204_244321"
+            },
+            {
+              "idx": 56,
+              "floor": "FloorPlan219",
+              "target": "Vase",
+              "parent": "Safe",
+              "task_id": "trial_T20190908_205204_244321"
+            },
+            {
+              "idx": 87,
+              "floor": "FloorPlan219",
+              "target": "Vase",
+              "parent": "Safe",
+              "task_id": "trial_T20190908_205221_748352"
+            },
+            {
+              "idx": 88,
+              "floor": "FloorPlan219",
+              "target": "Vase",
+              "parent": "Safe",
+              "task_id": "trial_T20190908_205221_748352"
+            },
+            {
+              "idx": 89,
+              "floor": "FloorPlan219",
+              "target": "Vase",
+              "parent": "Safe",
+              "task_id": "trial_T20190908_205221_748352"
+            }
+          ],
+          "fail_idxs": [
+            21,
+            22,
+            23,
+            54,
+            55,
+            56,
+            87,
+            88,
+            89
+          ],
+          "trace": {
+            "n_events": 63,
+            "return": 63,
+            "select": 0,
+            "selects": [],
+            "rebuild_n": 0,
+            "rebuild_match": 0,
+            "rebuild_match_rate": 1.0,
+            "actions": {
+              "PutObject": 63
+            }
+          }
+        },
+        "oracle": {
+          "n": 100,
+          "sr": 0.91,
+          "pickup": 1.0,
+          "put": 0.91,
+          "fails": [
+            {
+              "idx": 21,
+              "floor": "FloorPlan219",
+              "target": "Vase",
+              "parent": "Safe",
+              "task_id": "trial_T20190908_205246_776817"
+            },
+            {
+              "idx": 22,
+              "floor": "FloorPlan219",
+              "target": "Vase",
+              "parent": "Safe",
+              "task_id": "trial_T20190908_205246_776817"
+            },
+            {
+              "idx": 23,
+              "floor": "FloorPlan219",
+              "target": "Vase",
+              "parent": "Safe",
+              "task_id": "trial_T20190908_205246_776817"
+            },
+            {
+              "idx": 54,
+              "floor": "FloorPlan219",
+              "target": "Vase",
+              "parent": "Safe",
+              "task_id": "trial_T20190908_205204_244321"
+            },
+            {
+              "idx": 55,
+              "floor": "FloorPlan219",
+              "target": "Vase",
+              "parent": "Safe",
+              "task_id": "trial_T20190908_205204_244321"
+            },
+            {
+              "idx": 56,
+              "floor": "FloorPlan219",
+              "target": "Vase",
+              "parent": "Safe",
+              "task_id": "trial_T20190908_205204_244321"
+            },
+            {
+              "idx": 87,
+              "floor": "FloorPlan219",
+              "target": "Vase",
+              "parent": "Safe",
+              "task_id": "trial_T20190908_205221_748352"
+            },
+            {
+              "idx": 88,
+              "floor": "FloorPlan219",
+              "target": "Vase",
+              "parent": "Safe",
+              "task_id": "trial_T20190908_205221_748352"
+            },
+            {
+              "idx": 89,
+              "floor": "FloorPlan219",
+              "target": "Vase",
+              "parent": "Safe",
+              "task_id": "trial_T20190908_205221_748352"
+            }
+          ],
+          "fail_idxs": [
+            21,
+            22,
+            23,
+            54,
+            55,
+            56,
+            87,
+            88,
+            89
+          ],
+          "trace": {
+            "n_events": 63,
+            "return": 63,
+            "select": 0,
+            "selects": [],
+            "rebuild_n": 0,
+            "rebuild_match": 0,
+            "rebuild_match_rate": 1.0,
+            "actions": {
+              "PutObject": 63
+            }
+          },
+          "vs_host": {
+            "pickup_id_diff": 0,
+            "put_id_diff": 24,
+            "gained": 0,
+            "lost": 0,
+            "id_diffs": [
+              {
+                "idx": 0,
+                "floor": "FloorPlan10",
+                "pickup_changed": false,
+                "put_changed": true,
+                "host_success": true,
+                "other_success": true
+              },
+              {
+                "idx": 1,
+                "floor": "FloorPlan10",
+                "pickup_changed": false,
+                "put_changed": true,
+                "host_success": true,
+                "other_success": true
+              },
+              {
+                "idx": 2,
+                "floor": "FloorPlan10",
+                "pickup_changed": false,
+                "put_changed": true,
+                "host_success": true,
+                "other_success": true
+              },
+              {
+                "idx": 12,
+                "floor": "FloorPlan10",
+                "pickup_changed": false,
+                "put_changed": true,
+                "host_success": true,
+                "other_success": true
+              },
+              {
+                "idx": 13,
+                "floor": "FloorPlan10",
+                "pickup_changed": false,
+                "put_changed": true,
+                "host_success": true,
+                "other_success": true
+              },
+              {
+                "idx": 14,
+                "floor": "FloorPlan10",
+                "pickup_changed": false,
+                "put_changed": true,
+                "host_success": true,
+                "other_success": true
+              },
+              {
+                "idx": 39,
+                "floor": "FloorPlan10",
+                "pickup_changed": false,
+                "put_changed": true,
+                "host_success": true,
+                "other_success": true
+              },
+              {
+                "idx": 40,
+                "floor": "FloorPlan10",
+                "pickup_changed": false,
+                "put_changed": true,
+                "host_success": true,
+                "other_success": true
+              },
+              {
+                "idx": 41,
+                "floor": "FloorPlan10",
+                "pickup_changed": false,
+                "put_changed": true,
+                "host_success": true,
+                "other_success": true
+              },
+              {
+                "idx": 42,
+                "floor": "FloorPlan10",
+                "pickup_changed": false,
+                "put_changed": true,
+                "host_success": true,
+                "other_success": true
+              },
+              {
+                "idx": 43,
+                "floor": "FloorPlan10",
+                "pickup_changed": false,
+                "put_changed": true,
+                "host_success": true,
+                "other_success": true
+              },
+              {
+                "idx": 44,
+                "floor": "FloorPlan10",
+                "pickup_changed": false,
+                "put_changed": true,
+                "host_success": true,
+                "other_success": true
+              },
+              {
+                "idx": 69,
+                "floor": "FloorPlan10",
+                "pickup_changed": false,
+                "put_changed": true,
+                "host_success": true,
+                "other_success": true
+              },
+              {
+                "idx": 70,
+                "floor": "FloorPlan10",
+                "pickup_changed": false,
+                "put_changed": true,
+                "host_success": true,
+                "other_success": true
+              },
+              {
+                "idx": 71,
+                "floor": "FloorPlan10",
+                "pickup_changed": false,
+                "put_changed": true,
+                "host_success": true,
+                "other_success": true
+              },
+              {
+                "idx": 72,
+                "floor": "FloorPlan10",
+                "pickup_changed": false,
+                "put_changed": true,
+                "host_success": true,
+                "other_success": true
+              },
+              {
+                "idx": 73,
+                "floor": "FloorPlan10",
+                "pickup_changed": false,
+                "put_changed": true,
+                "host_success": true,
+                "other_success": true
+              },
+              {
+                "idx": 74,
+                "floor": "FloorPlan10",
+                "pickup_changed": false,
+                "put_changed": true,
+                "host_success": true,
+                "other_success": true
+              },
+              {
+                "idx": 84,
+                "floor": "FloorPlan10",
+                "pickup_changed": false,
+                "put_changed": true,
+                "host_success": true,
+                "other_success": true
+              },
+              {
+                "idx": 85,
+                "floor": "FloorPlan10",
+                "pickup_changed": false,
+                "put_changed": true,
+                "host_success": true,
+                "other_success": true
+              },
+              {
+                "idx": 86,
+                "floor": "FloorPlan10",
+                "pickup_changed": false,
+                "put_changed": true,
+                "host_success": true,
+                "other_success": true
+              },
+              {
+                "idx": 94,
+                "floor": "FloorPlan10",
+                "pickup_changed": false,
+                "put_changed": true,
+                "host_success": true,
+                "other_success": true
+              },
+              {
+                "idx": 95,
+                "floor": "FloorPlan10",
+                "pickup_changed": false,
+                "put_changed": true,
+                "host_success": true,
+                "other_success": true
+              },
+              {
+                "idx": 96,
+                "floor": "FloorPlan10",
+                "pickup_changed": false,
+                "put_changed": true,
+                "host_success": true,
+                "other_success": true
+              }
+            ]
+          }
+        },
+        "jev": {
+          "n": 100,
+          "sr": 0.91,
+          "pickup": 1.0,
+          "put": 0.91,
+          "fails": [
+            {
+              "idx": 21,
+              "floor": "FloorPlan219",
+              "target": "Vase",
+              "parent": "Safe",
+              "task_id": "trial_T20190908_205246_776817"
+            },
+            {
+              "idx": 22,
+              "floor": "FloorPlan219",
+              "target": "Vase",
+              "parent": "Safe",
+              "task_id": "trial_T20190908_205246_776817"
+            },
+            {
+              "idx": 23,
+              "floor": "FloorPlan219",
+              "target": "Vase",
+              "parent": "Safe",
+              "task_id": "trial_T20190908_205246_776817"
+            },
+            {
+              "idx": 54,
+              "floor": "FloorPlan219",
+              "target": "Vase",
+              "parent": "Safe",
+              "task_id": "trial_T20190908_205204_244321"
+            },
+            {
+              "idx": 55,
+              "floor": "FloorPlan219",
+              "target": "Vase",
+              "parent": "Safe",
+              "task_id": "trial_T20190908_205204_244321"
+            },
+            {
+              "idx": 56,
+              "floor": "FloorPlan219",
+              "target": "Vase",
+              "parent": "Safe",
+              "task_id": "trial_T20190908_205204_244321"
+            },
+            {
+              "idx": 87,
+              "floor": "FloorPlan219",
+              "target": "Vase",
+              "parent": "Safe",
+              "task_id": "trial_T20190908_205221_748352"
+            },
+            {
+              "idx": 88,
+              "floor": "FloorPlan219",
+              "target": "Vase",
+              "parent": "Safe",
+              "task_id": "trial_T20190908_205221_748352"
+            },
+            {
+              "idx": 89,
+              "floor": "FloorPlan219",
+              "target": "Vase",
+              "parent": "Safe",
+              "task_id": "trial_T20190908_205221_748352"
+            }
+          ],
+          "fail_idxs": [
+            21,
+            22,
+            23,
+            54,
+            55,
+            56,
+            87,
+            88,
+            89
+          ],
+          "trace": {
+            "n_events": 63,
+            "return": 63,
+            "select": 0,
+            "selects": [],
+            "rebuild_n": 63,
+            "rebuild_match": 63,
+            "rebuild_match_rate": 1.0,
+            "actions": {
+              "PutObject": 63
+            }
+          },
+          "vs_host": {
+            "pickup_id_diff": 0,
+            "put_id_diff": 0,
+            "gained": 0,
+            "lost": 0,
+            "id_diffs": []
+          }
+        },
+        "openai_decisions": {
+          "n": 100,
+          "sr": 0.91,
+          "pickup": 1.0,
+          "put": 0.91,
+          "fails": [
+            {
+              "idx": 21,
+              "floor": "FloorPlan219",
+              "target": "Vase",
+              "parent": "Safe",
+              "task_id": "trial_T20190908_205246_776817"
+            },
+            {
+              "idx": 22,
+              "floor": "FloorPlan219",
+              "target": "Vase",
+              "parent": "Safe",
+              "task_id": "trial_T20190908_205246_776817"
+            },
+            {
+              "idx": 23,
+              "floor": "FloorPlan219",
+              "target": "Vase",
+              "parent": "Safe",
+              "task_id": "trial_T20190908_205246_776817"
+            },
+            {
+              "idx": 54,
+              "floor": "FloorPlan219",
+              "target": "Vase",
+              "parent": "Safe",
+              "task_id": "trial_T20190908_205204_244321"
+            },
+            {
+              "idx": 55,
+              "floor": "FloorPlan219",
+              "target": "Vase",
+              "parent": "Safe",
+              "task_id": "trial_T20190908_205204_244321"
+            },
+            {
+              "idx": 56,
+              "floor": "FloorPlan219",
+              "target": "Vase",
+              "parent": "Safe",
+              "task_id": "trial_T20190908_205204_244321"
+            },
+            {
+              "idx": 87,
+              "floor": "FloorPlan219",
+              "target": "Vase",
+              "parent": "Safe",
+              "task_id": "trial_T20190908_205221_748352"
+            },
+            {
+              "idx": 88,
+              "floor": "FloorPlan219",
+              "target": "Vase",
+              "parent": "Safe",
+              "task_id": "trial_T20190908_205221_748352"
+            },
+            {
+              "idx": 89,
+              "floor": "FloorPlan219",
+              "target": "Vase",
+              "parent": "Safe",
+              "task_id": "trial_T20190908_205221_748352"
+            }
+          ],
+          "fail_idxs": [
+            21,
+            22,
+            23,
+            54,
+            55,
+            56,
+            87,
+            88,
+            89
+          ],
+          "trace": {
+            "n_events": 63,
+            "return": 63,
+            "select": 0,
+            "selects": [],
+            "rebuild_n": 63,
+            "rebuild_match": 63,
+            "rebuild_match_rate": 1.0,
+            "actions": {
+              "PutObject": 63
+            }
+          },
+          "vs_host": {
+            "pickup_id_diff": 0,
+            "put_id_diff": 0,
+            "gained": 0,
+            "lost": 0,
+            "id_diffs": []
+          }
+        }
+      },
+      "expected_n": 100
+    }
+  }
+}

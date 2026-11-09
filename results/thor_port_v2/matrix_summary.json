@@ -1,0 +1,165 @@
+{
+  "failures": [],
+  "table": [
+    {
+      "host": "capeam",
+      "split": "valid_seen",
+      "source": "host",
+      "n": 142,
+      "sr": 0.9154929577464789,
+      "pickup": 1.0,
+      "put": 0.9154929577464789,
+      "api_errors": 0
+    },
+    {
+      "host": "capeam",
+      "split": "valid_seen",
+      "source": "oracle",
+      "n": 142,
+      "sr": 0.8873239436619719,
+      "pickup": 1.0,
+      "put": 0.8873239436619719,
+      "api_errors": 0
+    },
+    {
+      "host": "capeam",
+      "split": "valid_seen",
+      "source": "jev",
+      "n": 142,
+      "sr": 0.9154929577464789,
+      "pickup": 1.0,
+      "put": 0.9154929577464789,
+      "api_errors": 0
+    },
+    {
+      "host": "capeam",
+      "split": "valid_seen",
+      "source": "openai_decisions",
+      "n": 142,
+      "sr": 0.9154929577464789,
+      "pickup": 1.0,
+      "put": 0.9154929577464789,
+      "api_errors": 0
+    },
+    {
+      "host": "capeam",
+      "split": "valid_unseen",
+      "source": "host",
+      "n": 100,
+      "sr": 0.91,
+      "pickup": 1.0,
+      "put": 0.91,
+      "api_errors": 0
+    },
+    {
+      "host": "capeam",
+      "split": "valid_unseen",
+      "source": "oracle",
+      "n": 100,
+      "sr": 0.91,
+      "pickup": 1.0,
+      "put": 0.91,
+      "api_errors": 0
+    },
+    {
+      "host": "capeam",
+      "split": "valid_unseen",
+      "source": "jev",
+      "n": 100,
+      "sr": 0.91,
+      "pickup": 1.0,
+      "put": 0.91,
+      "api_errors": 0
+    },
+    {
+      "host": "capeam",
+      "split": "valid_unseen",
+      "source": "openai_decisions",
+      "n": 100,
+      "sr": 0.91,
+      "pickup": 1.0,
+      "put": 0.91,
+      "api_errors": 0
+    },
+    {
+      "host": "film",
+      "split": "valid_seen",
+      "source": "host",
+      "n": 142,
+      "sr": 0.8873239436619719,
+      "pickup": 1.0,
+      "put": 0.8873239436619719,
+      "api_errors": 0
+    },
+    {
+      "host": "film",
+      "split": "valid_seen",
+      "source": "oracle",
+      "n": 142,
+      "sr": 0.8873239436619719,
+      "pickup": 1.0,
+      "put": 0.8873239436619719,
+      "api_errors": 0
+    },
+    {
+      "host": "film",
+      "split": "valid_seen",
+      "source": "jev",
+      "n": 142,
+      "sr": 0.8873239436619719,
+      "pickup": 1.0,
+      "put": 0.8873239436619719,
+      "api_errors": 0
+    },
+    {
+      "host": "film",
+      "split": "valid_seen",
+      "source": "openai_decisions",
+      "n": 142,
+      "sr": 0.9154929577464789,
+      "pickup": 1.0,
+      "put": 0.9154929577464789,
+      "api_errors": 0
+    },
+    {
+      "host": "film",
+      "split": "valid_unseen",
+      "source": "host",
+      "n": 100,
+      "sr": 0.91,
+      "pickup": 1.0,
+      "put": 0.91,
+      "api_errors": 0
+    },
+    {
+      "host": "film",
+      "split": "valid_unseen",
+      "source": "oracle",
+      "n": 100,
+      "sr": 0.91,
+      "pickup": 1.0,
+      "put": 0.91,
+      "api_errors": 0
+    },
+    {
+      "host": "film",
+      "split": "valid_unseen",
+      "source": "jev",
+      "n": 100,
+      "sr": 0.91,
+      "pickup": 1.0,
+      "put": 0.91,
+      "api_errors": 0
+    },
+    {
+      "host": "film",
+      "split": "valid_unseen",
+      "source": "openai_decisions",
+      "n": 100,
+      "sr": 0.91,
+      "pickup": 1.0,
+      "put": 0.91,
+      "api_errors": 0
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "host": "capeam",
+  "split": "valid_seen",
+  "sources": {
+    "host": {
+      "n": 142,
+      "sr": 0.9154929577464789,
+      "pickup": 1.0,
+      "put": 0.9154929577464789,
+      "api_errors": 0
+    },
+    "oracle": {
+      "n": 142,
+      "sr": 0.8873239436619719,
+      "pickup": 1.0,
+      "put": 0.8873239436619719,
+      "api_errors": 0
+    }
+  }
+}

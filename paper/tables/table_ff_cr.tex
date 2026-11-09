@@ -1,0 +1,36 @@
+\begin{table}[t]
+\centering
+\caption{TRACE on the official 820/821-episode FILM/CAPEAM \emph{host logs} (the weak baseline of Table~\ref{tab:official}).
+Metric-FF planner $C$, $N\ge 2$, $c_{\mathrm{defer}}{=}4$ --- the same critic as closed-loop v3.
+CR is extra planner steps vs.\ the oracle decision.
+OpenAI images are rebuilt from Jev overlays.
+CAPEAM seen wrong${=}0.512$ because $j_{\mathrm{true}}$ is null on $42/84$ events; in-list CR is $0$.
+CAPEAM unseen has no Metric-FF $C$; closed-loop planner CR is Table~\ref{tab:putcr}.
+Unrec.${=}0$ on every TRACE row.}
+\label{tab:replay}
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{llcccc}
+\toprule
+Split & Belief & $n$ & CR$\downarrow$ & Wrong$\downarrow$ & Return \\
+\midrule
+\multicolumn{6}{l}{\textit{FILM, valid\_seen}}\\
+& GT-ID oracle & 92 & 0.130 & 0.250 & 0.054 \\
+& Jev & 92 & \textbf{0.152} & 0.261 & 0.054 \\
+& OpenAI & 92 & 0.196 & 0.293 & 0.033 \\
+& DINOv2 & 92 & 1.380 & 0.457 & 0.033 \\
+\midrule
+\multicolumn{6}{l}{\textit{FILM, valid\_unseen}}\\
+& GT-ID oracle & 65 & 0.123 & 0.062 & 0.031 \\
+& OpenAI & 65 & \textbf{0.185} & \textbf{0.000} & 0.031 \\
+& Jev & 65 & 0.246 & 0.031 & 0.031 \\
+& DINOv2 & 65 & 0.462 & 0.108 & 0.031 \\
+\midrule
+\multicolumn{6}{l}{\textit{CAPEAM, valid\_seen}}\\
+& GT-ID oracle & 84 & 0.000 & 0.512 & 0.000 \\
+& Jev & 84 & \textbf{0.012} & 0.512 & 0.000 \\
+& OpenAI & 84 & \textbf{0.012} & 0.512 & 0.000 \\
+& DINOv2 & 84 & 0.405 & 0.536 & 0.000 \\
+\bottomrule
+\end{tabular}
+\end{table}

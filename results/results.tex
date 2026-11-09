@@ -1,0 +1,265 @@
+% TRACE results (jw). Paper-ready tables. Not official ALFRED 10-fail 820ep.
+% Closed-loop: THOR 5 pick_and_place_simple, seen 142 / unseen 100.
+% Replay: Metric-FF C, N>=2 mask events, c_defer=4.
+% Compile: pdflatex results.tex  (needs booktabs, graphicx)
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage[hidelinks]{hyperref}
+
+\title{TRACE results: THOR~5 closed loop and mask-log replay}
+\author{kcasl}
+\date{2026-11-05}
+
+\begin{document}
+\maketitle
+\noindent
+Source: \texttt{kcasl/results/RERUN.md}, \texttt{episode\_v2.md}, \texttt{replay\_slices.md}, \texttt{log\_replay.json}.
+These numbers replace ryankwon official 10-failure SR as the display closed-loop table.
+Pickup rate is $1.000$ on every THOR~5 row; failures are Put.
+v2 method: task grounding (no expert crop) + Put success-valued $C$ (fail${=}100$, $c_{\mathrm{defer}}{=}4$).
+SELECT only if $p_i>0.96$.
+
+\section{Closed-loop SR (THOR~5, pick\_and\_place\_simple)}
+\label{sec:sr}
+
+\begin{table}[t]
+\centering
+\caption{Ported THOR~5 closed-loop success rate, method v2. Host/oracle match v1 and the unseen recheck. Unseen $0.910=91/100$.}
+\label{tab:thor-sr-v2}
+\scriptsize
+\begin{tabular}{llcccc}
+\toprule
+Host & Split & $n$ & Host SR & Oracle SR & Jev v2 & OpenAI v2 \\
+\midrule
+FILM distance & seen & 142 & 0.887 & 0.887 & 0.887 & \textbf{0.915} \\
+FILM distance & unseen & 100 & 0.910 & 0.910 & 0.910 & 0.910 \\
+CAPEAM Mask R-CNN & seen & 142 & 0.915 & 0.887 & 0.915 & 0.915 \\
+CAPEAM Mask R-CNN & unseen & 100 & 0.910 & 0.910 & 0.910 & 0.910 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[t]
+\centering
+\caption{Jev / OpenAI TRACE vs host, method v1 (expert crop, step-cost $C$) vs v2. $\Delta$ is episodes vs the same-row host.}
+\label{tab:thor-v1v2}
+\scriptsize
+\begin{tabular}{llcrrrr}
+\toprule
+Host & Split & Host & Jev v1 & OpenAI v1 & Jev v2 & OpenAI v2 \\
+\midrule
+FILM & seen & 0.887 & \textbf{0.915} $(+4)$ & 0.887 & 0.887 & \textbf{0.915} $(+4)$ \\
+FILM & unseen & 0.910 & 0.880 $(-3)$ & 0.880 $(-3)$ & 0.910 & 0.910 \\
+CAPEAM & seen & 0.915 & 0.915 & 0.887 $(-4)$ & 0.915 & 0.915 \\
+CAPEAM & unseen & 0.910 & 0.880 $(-3)$ & 0.880 $(-3)$ & 0.910 & 0.910 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[t]
+\centering
+\caption{v2 TRACE events with $N\ge 2$. $N{=}1$ uses host\_score. API errors: 0.}
+\label{tab:thor-select}
+\scriptsize
+\begin{tabular}{lllrrrr}
+\toprule
+Host & Split & Source & Events & RETURN & SELECT & SR \\
+\midrule
+FILM & seen & Jev & 70 & 69 & 1 & 0.887 \\
+FILM & seen & OpenAI & 70 & 59 & 11 & \textbf{0.915} \\
+FILM & unseen & Jev & 63 & 63 & 0 & 0.910 \\
+FILM & unseen & OpenAI & 63 & 63 & 0 & 0.910 \\
+CAPEAM & seen & Jev & 70 & 70 & 0 & 0.915 \\
+CAPEAM & seen & OpenAI & 70 & 59 & 11 & 0.915 \\
+CAPEAM & unseen & Jev & 63 & 62 & 1 & 0.910 \\
+CAPEAM & unseen & OpenAI & 63 & 63 & 0 & 0.910 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Unseen failures (all sources): idx $21$--$23$, $54$--$56$, $87$--$89$, FloorPlan219 Vase$\to$Safe. Pickup succeeds; Put fails. Identity SELECT does not change these nine.
+
+\section{Episode list (lab jsonl, 2026-11-05)}
+\label{sec:episodes}
+
+\begin{table}[t]
+\centering
+\caption{FILM seen OpenAI $+4$: host Put fails, OpenAI SELECT uses the SinkBasin id ($p_{\max}{=}0.99$, $n{=}3$). Jev does not recover these four. CAPEAM host already succeeds them.}
+\label{tab:film-gain}
+\scriptsize
+\begin{tabular}{cllcc}
+\toprule
+idx & Floor & Task & Host put & OpenAI put \\
+\midrule
+108 & FloorPlan422 & HandTowel $\to$ SinkBasin & 0 & 1 \\
+109 & FloorPlan422 & HandTowel $\to$ SinkBasin & 0 & 1 \\
+110 & FloorPlan422 & HandTowel $\to$ SinkBasin & 0 & 1 \\
+111 & FloorPlan422 & HandTowel $\to$ SinkBasin & 0 & 1 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[t]
+\centering
+\caption{Seen host Put failures. CAPEAM seen fail count $12=$ FILM $16$ minus the FloorPlan422 four.}
+\label{tab:seen-fail}
+\scriptsize
+\begin{tabular}{lllr}
+\toprule
+Host & Floor & Target $\to$ parent & $n$ \\
+\midrule
+FILM, CAPEAM & FloorPlan224 & Box $\to$ Dresser & 3 \\
+FILM, CAPEAM & FloorPlan20 & Knife $\to$ SinkBasin & 3 \\
+FILM only & FloorPlan422 & HandTowel $\to$ SinkBasin & 4 \\
+FILM, CAPEAM & FloorPlan409 & SprayBottle $\to$ GarbageCan & 3 \\
+FILM, CAPEAM & FloorPlan224 & Newspaper $\to$ Sofa & 3 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+FILM vs CAPEAM pickup-id diffs: three episodes, FloorPlan406 idx $112$--$114$ (ToiletPaper). Both succeed; they are not the SR gap.
+Jev SELECT (no SR change): FILM seen idx $128$ FloorPlan406 Put; CAPEAM unseen idx $36$ FloorPlan10 Put.
+
+\section{Mask-log replay (Metric-FF $C$, $N\ge 2$)}
+\label{sec:replay}
+
+CR $=$ realized extra cost minus oracle extra cost. Wrong $=$ SELECT of a non-true instance. Unrecoverable TRACE rate is $0$ on all three splits. CAPEAM unseen Metric-FF \texttt{costs.jsonl} is still missing; the closed-loop jsonl replay is \S\ref{sec:capeam-unseen}.
+
+\begin{table*}[t]
+\centering
+\caption{TRACE commitment regret on host mask logs. Same $C$, $c_{\mathrm{defer}}{=}4$. OpenAI images are rebuilt from Jev bbox overlays.}
+\label{tab:replay-trace}
+\scriptsize
+\begin{tabular}{llccccc}
+\toprule
+Split & Belief & $n$ & CR$\downarrow$ & Wrong$\downarrow$ & Return & Unrec.$\downarrow$ \\
+\midrule
+FILM seen & oracle & 92 & 0.130 & 0.250 & 0.054 & 0 \\
+FILM seen & Jev & 92 & 0.152 & 0.261 & 0.054 & 0 \\
+FILM seen & OpenAI & 92 & 0.196 & 0.293 & 0.033 & 0 \\
+FILM seen & DINOv2 & 92 & 1.380 & 0.457 & 0.033 & 0 \\
+\midrule
+FILM unseen & oracle & 65 & 0.123 & 0.062 & 0.031 & 0 \\
+FILM unseen & OpenAI & 65 & 0.185 & 0.000 & 0.031 & 0 \\
+FILM unseen & Jev & 65 & 0.246 & 0.031 & 0.031 & 0 \\
+FILM unseen & DINOv2 & 65 & 0.462 & 0.108 & 0.031 & 0 \\
+\midrule
+CAPEAM seen & oracle & 84 & 0.000 & 0.512 & 0.000 & 0 \\
+CAPEAM seen & Jev & 84 & 0.012 & 0.512 & 0.000 & 0 \\
+CAPEAM seen & OpenAI & 84 & 0.012 & 0.512 & 0.000 & 0 \\
+CAPEAM seen & DINOv2 & 84 & 0.405 & 0.536 & 0.000 & 0 \\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+\begin{table}[t]
+\centering
+\caption{Why CAPEAM seen wrong${=}0.512$: half of $N\ge 2$ events have $j_{\mathrm{true}}{=}\mathrm{null}$ (reference not in the candidate list). In-list CR is $0$. Oracle TRACE has the same overall wrong rate.}
+\label{tab:replay-jtrue}
+\scriptsize
+\begin{tabular}{llrrrr}
+\toprule
+Split & $N\ge 2$ & In list & Null & Null rate & In-list Jev/OpenAI CR \\
+\midrule
+FILM seen & 92 & 73 & 19 & 0.207 & 0.027 / 0.247 \\
+FILM unseen & 65 & 63 & 2 & 0.031 & 0.127 / 0.063 \\
+CAPEAM seen & 84 & 42 & 42 & 0.500 & 0.000 / 0.000 \\
+CAPEAM unseen & --- & --- & --- & no Metric-FF $C$ & --- \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[t]
+\centering
+\caption{TRACE CR by action. FILM unseen Jev vs OpenAI gap is Pickup ($n{=}13$). FILM seen Jev vs OpenAI swap: Pickup vs Put.}
+\label{tab:replay-action}
+\scriptsize
+\begin{tabular}{llrrr}
+\toprule
+Split & Action & $n$ & Jev CR & OpenAI CR \\
+\midrule
+FILM seen & PickupObject & 14 & 0.857 & 0.000 \\
+FILM seen & PutObject & 39 & 0.051 & 0.462 \\
+FILM unseen & PickupObject & 13 & 0.923 & 0.615 \\
+FILM unseen & PutObject & 13 & 0.000 & 0.000 \\
+FILM unseen & ToggleObjectOff & 32 & 0.000 & 0.000 \\
+CAPEAM seen & PutObject & 50 & 0.020 & 0.020 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{CAPEAM unseen THOR-jsonl replay}
+\label{sec:capeam-unseen}
+
+Metric-FF $C$ for CAPEAM unseen does not exist on the lab. v2 rollouts already logged $n$, $p$, defer, so the Put success-valued critic is rebuilt from those events (\texttt{experiments/thor\_jsonl.py}). Rebuild match vs logged gate is $1.00$.
+
+\begin{table}[t]
+\centering
+\caption{CAPEAM \texttt{valid\_unseen} THOR~5, $n{=}100$. Failures are the same nine FloorPlan219 Vase$\to$Safe episodes (idx $21$--$23$, $54$--$56$, $87$--$89$).}
+\label{tab:capeam-unseen-jsonl}
+\scriptsize
+\begin{tabular}{lcccccc}
+\toprule
+Source & SR & Pickup & $N\ge 2$ & RETURN & SELECT & vs host \\
+\midrule
+host & 0.910 & 1.000 & 63 & 63 & 0 & --- \\
+oracle & 0.910 & 1.000 & 63 & 63 & 0 & $+0/-0$ \\
+Jev v2 & 0.910 & 1.000 & 63 & 62 & 1 & $+0/-0$ \\
+OpenAI v2 & 0.910 & 1.000 & 63 & 63 & 0 & $+0/-0$ \\
+\midrule
+Jev recheck & 0.910 & 1.000 & 63 & 63 & 0 & $+0/-0$ \\
+OpenAI recheck & 0.910 & 1.000 & 63 & 63 & 0 & $+0/-0$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Jev SELECT is idx $36$, FloorPlan10 SaltShaker$\to$Cabinet, $p_{\max}{=}0.97$, $n{=}8$, episode already succeeds under the host. Recheck $p_{\max}{=}0.96$ so $R{=}c_{\mathrm{defer}}{=}4$ and the gate RETURNS. SR is unchanged.
+
+\section{Synthetic identity and unit-test gate}
+\label{sec:live}
+
+\begin{table}[t]
+\centering
+\caption{Same three drawings, Jev vs OpenAI Decisions. Identity accuracy $1.00$ both. TRACE actions agree on all three cost worlds.}
+\label{tab:identity}
+\scriptsize
+\begin{tabular}{lcccc}
+\toprule
+Case & Truth & Jev $p$ & OpenAI $p$ & $L_1$ \\
+\midrule
+visible\_match & 0 & $[0.98,0.00,0.02]$ & $[0.98,0.01,0.01]$ & 0.02 \\
+reference\_absent & 2 & $[0.11,0.01,0.88]$ & $[0.38,0.06,0.56]$ & 0.64 \\
+lookalike & 0 & $[0.74,0.21,0.05]$ & $[0.95,0.03,0.02]$ & 0.42 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[t]
+\centering
+\caption{Fixed $p{=}[0.6,0.4,0]$, $c_{\mathrm{defer}}{=}4$. Cheap extra cost $2$, expensive $20$.}
+\label{tab:offline-rules}
+\scriptsize
+\begin{tabular}{lccc}
+\toprule
+Rule & Cheap & Expensive & Mean extra \\
+\midrule
+TRACE & SELECT $0$ & RETURN & \textbf{2.4} \\
+threshold $\tau{=}0.55$ & SELECT $0$ & SELECT $0$ & 4.4 \\
+threshold $\tau{=}0.75$ & RETURN & RETURN & 4.0 \\
+host\_score & wrong mask & wrong mask & 6.6 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Not measured}
+\label{sec:missing}
+\begin{itemize}
+\item Official FILM/CAPEAM 820ep closed-loop TRACE SR (2019 THOR + Blackwell blocked).
+\item CAPEAM unseen Metric-FF replay CR (no \texttt{costs.jsonl}; THOR-jsonl put-success replay is in \S\ref{sec:capeam-unseen}).
+\item OpenAI replay on original THOR RGB frames (\texttt{--rgb}; rollouts absent).
+\end{itemize}
+
+\end{document}

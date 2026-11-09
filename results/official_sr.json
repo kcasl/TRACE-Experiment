@@ -1,0 +1,88 @@
+{
+  "protocol": "A",
+  "max_fails": 10,
+  "max_steps": 1000,
+  "source": "FILM/CAPEAM host rollouts, official 10-failure cutoff",
+  "rows": [
+    {
+      "host": "capeam",
+      "split": "valid_seen",
+      "selector": "host",
+      "n": 820,
+      "sr": 0.443,
+      "gc": 0.555,
+      "steps": 312,
+      "fails": 4.7
+    },
+    {
+      "host": "capeam",
+      "split": "valid_seen",
+      "selector": "oracle",
+      "n": 820,
+      "sr": 0.446,
+      "gc": 0.559,
+      "steps": 309,
+      "fails": 4.7
+    },
+    {
+      "host": "capeam",
+      "split": "valid_unseen",
+      "selector": "host",
+      "n": 821,
+      "sr": 0.39,
+      "gc": 0.493,
+      "steps": 416,
+      "fails": 6.0
+    },
+    {
+      "host": "capeam",
+      "split": "valid_unseen",
+      "selector": "oracle",
+      "n": 821,
+      "sr": 0.39,
+      "gc": 0.493,
+      "steps": 413,
+      "fails": 6.1
+    },
+    {
+      "host": "film",
+      "split": "valid_seen",
+      "selector": "host",
+      "n": 820,
+      "sr": 0.232,
+      "gc": 0.364,
+      "steps": 473,
+      "fails": 6.0
+    },
+    {
+      "host": "film",
+      "split": "valid_seen",
+      "selector": "oracle",
+      "n": 820,
+      "sr": 0.226,
+      "gc": 0.363,
+      "steps": 476,
+      "fails": 6.0
+    },
+    {
+      "host": "film",
+      "split": "valid_unseen",
+      "selector": "host",
+      "n": 821,
+      "sr": 0.205,
+      "gc": 0.334,
+      "steps": 428,
+      "fails": 7.9
+    },
+    {
+      "host": "film",
+      "split": "valid_unseen",
+      "selector": "oracle",
+      "n": 821,
+      "sr": 0.201,
+      "gc": 0.332,
+      "steps": 428,
+      "fails": 7.9
+    }
+  ]
+}

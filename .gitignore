@@ -1,0 +1,9 @@
+.env
+__pycache__/
+.pytest_cache/
+*.pyc
+.venv/
+results/mask_views/
+results/**/*.jsonl
+paper/figures/**/*.png
+paper/figures/compare/**/*.json

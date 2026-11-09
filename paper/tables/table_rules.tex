@@ -1,0 +1,19 @@
+\begin{table}[t]
+\centering
+\caption{Same $p{=}[0.6,0.4,0]$, $B_{\mathrm{ov}}{=}4$, cheap extra $2$ vs.\ expensive extra $20$.
+Mean$_{B}$: RETURN${=}B_{\mathrm{ov}}$. Mean$_{\mathrm{h}}$: RETURN pays $i_{\mathrm{host}}$.
+Selection study, not closed-loop extra.}
+\label{tab:rules}
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{lcccc}
+\toprule
+Rule & Cheap & Exp. & Mean$_{B}$ & Mean$_{\mathrm{h}}$ \\
+\midrule
+TRACE (ours) & SELECT $0$ & RETURN & 2.4 & 6.4 \\
+threshold $\tau{=}0.55$ & SELECT $0$ & SELECT $0$ & 4.4 & 4.4 \\
+threshold $\tau{=}0.75$ & RETURN & RETURN & 4.0 & 6.6 \\
+host score & wrong mask & wrong mask & 6.6 & 6.6 \\
+\bottomrule
+\end{tabular}
+\end{table}

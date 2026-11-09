@@ -1,0 +1,88 @@
+{
+  "deferral_cost": 4.0,
+  "belief": [
+    0.6,
+    0.4,
+    0.0
+  ],
+  "rows": [
+    {
+      "world": "cheap",
+      "wrong_cost": 2.0,
+      "rule": "trace",
+      "action": "SELECT",
+      "index": 0,
+      "min_expected_regret": 0.8,
+      "realized_expected_cost": 0.8
+    },
+    {
+      "world": "cheap",
+      "wrong_cost": 2.0,
+      "rule": "threshold_055",
+      "action": "SELECT",
+      "index": 0,
+      "min_expected_regret": 0.8,
+      "realized_expected_cost": 0.8
+    },
+    {
+      "world": "cheap",
+      "wrong_cost": 2.0,
+      "rule": "threshold_075",
+      "action": "RETURN",
+      "index": null,
+      "min_expected_regret": 0.8,
+      "realized_expected_cost": 4.0
+    },
+    {
+      "world": "cheap",
+      "wrong_cost": 2.0,
+      "rule": "host_score",
+      "action": "SELECT",
+      "index": 1,
+      "min_expected_regret": 0.8,
+      "realized_expected_cost": 1.2
+    },
+    {
+      "world": "expensive",
+      "wrong_cost": 20.0,
+      "rule": "trace",
+      "action": "RETURN",
+      "index": null,
+      "min_expected_regret": 8.0,
+      "realized_expected_cost": 4.0
+    },
+    {
+      "world": "expensive",
+      "wrong_cost": 20.0,
+      "rule": "threshold_055",
+      "action": "SELECT",
+      "index": 0,
+      "min_expected_regret": 8.0,
+      "realized_expected_cost": 8.0
+    },
+    {
+      "world": "expensive",
+      "wrong_cost": 20.0,
+      "rule": "threshold_075",
+      "action": "RETURN",
+      "index": null,
+      "min_expected_regret": 8.0,
+      "realized_expected_cost": 4.0
+    },
+    {
+      "world": "expensive",
+      "wrong_cost": 20.0,
+      "rule": "host_score",
+      "action": "SELECT",
+      "index": 1,
+      "min_expected_regret": 8.0,
+      "realized_expected_cost": 12.0
+    }
+  ],
+  "mean_realized_cost": {
+    "trace": 2.4,
+    "threshold_055": 4.4,
+    "threshold_075": 4.0,
+    "host_score": 6.6
+  }
+}

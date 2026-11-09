@@ -1,0 +1,27 @@
+\begin{table}[t]
+\centering
+\caption{Metric-FF TRACE CR by action.
+FILM unseen Jev vs.\ OpenAI is Pickup ($n{=}13$).
+FILM seen swaps: OpenAI is better on Pickup, Jev on Put.}
+\label{tab:action}
+\scriptsize
+\setlength{\tabcolsep}{3.5pt}
+\begin{tabular}{llrrr}
+\toprule
+Split & Action & $n$ & Jev CR & OpenAI CR \\
+\midrule
+FILM seen & PickupObject & 14 & 0.857 & \textbf{0.000} \\
+FILM seen & PutObject & 39 & \textbf{0.051} & 0.462 \\
+FILM seen & CloseObject & 30 & 0.000 & 0.000 \\
+FILM seen & ToggleObjectOff & 9 & 0.000 & 0.000 \\
+FILM unseen & PickupObject & 13 & 0.923 & \textbf{0.615} \\
+FILM unseen & PutObject & 13 & 0.000 & 0.000 \\
+FILM unseen & CloseObject & 7 & 0.571 & 0.571 \\
+FILM unseen & ToggleObjectOff & 32 & 0.000 & 0.000 \\
+CAPEAM seen & PickupObject & 10 & 0.000 & 0.000 \\
+CAPEAM seen & PutObject & 50 & 0.020 & 0.020 \\
+CAPEAM seen & CloseObject & 16 & 0.000 & 0.000 \\
+CAPEAM seen & ToggleObjectOff & 8 & 0.000 & 0.000 \\
+\bottomrule
+\end{tabular}
+\end{table}

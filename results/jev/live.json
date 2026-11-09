@@ -1,0 +1,209 @@
+{
+  "experiment": "jev",
+  "sources": [
+    "jev"
+  ],
+  "cases": [
+    "visible_match",
+    "reference_absent",
+    "lookalike"
+  ],
+  "rows": [
+    {
+      "case": "visible_match",
+      "truth": 0,
+      "source": "oracle",
+      "ok": true,
+      "refusal": false,
+      "p_identity": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "confidence": null,
+      "top": 0,
+      "identity_correct": true,
+      "decisions": {
+        "same_room_drawers": {
+          "trace": "SELECT 0",
+          "threshold_075": "SELECT 0",
+          "min_expected_regret": 0.0
+        },
+        "far_fridge": {
+          "trace": "SELECT 0",
+          "threshold_075": "SELECT 0",
+          "min_expected_regret": 0.0
+        },
+        "split_fridges": {
+          "trace": "SELECT 0",
+          "threshold_075": "SELECT 0",
+          "min_expected_regret": 0.0
+        }
+      }
+    },
+    {
+      "case": "visible_match",
+      "truth": 0,
+      "source": "jev",
+      "ok": true,
+      "refusal": false,
+      "p_identity": [
+        0.98,
+        0.0,
+        0.02
+      ],
+      "confidence": 0.97,
+      "top": 0,
+      "identity_correct": true,
+      "decisions": {
+        "same_room_drawers": {
+          "trace": "SELECT 0",
+          "threshold_075": "SELECT 0",
+          "min_expected_regret": 0.04
+        },
+        "far_fridge": {
+          "trace": "SELECT 0",
+          "threshold_075": "SELECT 0",
+          "min_expected_regret": 0.04
+        },
+        "split_fridges": {
+          "trace": "SELECT 0",
+          "threshold_075": "SELECT 0",
+          "min_expected_regret": 0.24
+        }
+      }
+    },
+    {
+      "case": "reference_absent",
+      "truth": 2,
+      "source": "oracle",
+      "ok": true,
+      "refusal": false,
+      "p_identity": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "confidence": null,
+      "top": 2,
+      "identity_correct": true,
+      "decisions": {
+        "same_room_drawers": {
+          "trace": "SELECT 0",
+          "threshold_075": "RETURN",
+          "min_expected_regret": 2.0
+        },
+        "far_fridge": {
+          "trace": "SELECT 0",
+          "threshold_075": "RETURN",
+          "min_expected_regret": 2.0
+        },
+        "split_fridges": {
+          "trace": "RETURN",
+          "threshold_075": "RETURN",
+          "min_expected_regret": 12.0
+        }
+      }
+    },
+    {
+      "case": "reference_absent",
+      "truth": 2,
+      "source": "jev",
+      "ok": true,
+      "refusal": false,
+      "p_identity": [
+        0.11,
+        0.01,
+        0.88
+      ],
+      "confidence": 0.82,
+      "top": 2,
+      "identity_correct": true,
+      "decisions": {
+        "same_room_drawers": {
+          "trace": "SELECT 0",
+          "threshold_075": "RETURN",
+          "min_expected_regret": 1.78
+        },
+        "far_fridge": {
+          "trace": "SELECT 0",
+          "threshold_075": "RETURN",
+          "min_expected_regret": 1.78
+        },
+        "split_fridges": {
+          "trace": "RETURN",
+          "threshold_075": "RETURN",
+          "min_expected_regret": 10.68
+        }
+      }
+    },
+    {
+      "case": "lookalike",
+      "truth": 0,
+      "source": "oracle",
+      "ok": true,
+      "refusal": false,
+      "p_identity": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "confidence": null,
+      "top": 0,
+      "identity_correct": true,
+      "decisions": {
+        "same_room_drawers": {
+          "trace": "SELECT 0",
+          "threshold_075": "SELECT 0",
+          "min_expected_regret": 0.0
+        },
+        "far_fridge": {
+          "trace": "SELECT 0",
+          "threshold_075": "SELECT 0",
+          "min_expected_regret": 0.0
+        },
+        "split_fridges": {
+          "trace": "SELECT 0",
+          "threshold_075": "SELECT 0",
+          "min_expected_regret": 0.0
+        }
+      }
+    },
+    {
+      "case": "lookalike",
+      "truth": 0,
+      "source": "jev",
+      "ok": true,
+      "refusal": false,
+      "p_identity": [
+        0.74,
+        0.21,
+        0.05
+      ],
+      "confidence": 0.61,
+      "top": 0,
+      "identity_correct": true,
+      "decisions": {
+        "same_room_drawers": {
+          "trace": "SELECT 0",
+          "threshold_075": "RETURN",
+          "min_expected_regret": 0.52
+        },
+        "far_fridge": {
+          "trace": "SELECT 0",
+          "threshold_075": "RETURN",
+          "min_expected_regret": 0.52
+        },
+        "split_fridges": {
+          "trace": "SELECT 0",
+          "threshold_075": "RETURN",
+          "min_expected_regret": 3.12
+        }
+      }
+    }
+  ],
+  "identity_accuracy": {
+    "jev": 1.0,
+    "oracle": 1.0
+  }
+}

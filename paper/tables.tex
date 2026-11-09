@@ -1,0 +1,34 @@
+% Standalone compile of every TRACE result table (IEEEtran, FILM/CAPEAM layout).
+% From jw/paper: pdflatex tables.tex
+% Main paper inputs the same fragments: \input{tables/table_thor_sr}
+\documentclass[conference]{IEEEtran}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{url}
+
+\begin{document}
+\title{TRACE result tables}
+\author{kcasl}
+\maketitle
+
+These fragments are FILM/CAPEAM-style (\texttt{booktabs}, seen/unseen column groups, \textit{host, split} blocks).
+Drop any file into \texttt{main.tex} with \texttt{\string\input\{tables/\ldots\}}.
+SPL is omitted: it was not measured.
+
+\input{tables/table_thor_sr}
+\input{tables/table_sr_diff}
+\input{tables/table_v1v2}
+\input{tables/table_task}
+\input{tables/table_gain}
+\input{tables/table_select}
+\input{tables/table_put_cr}
+\input{tables/table_official}
+\input{tables/table_ff_cr}
+\input{tables/table_ff_rules}
+\input{tables/table_jtrue}
+\input{tables/table_action}
+\input{tables/table_rules}
+\input{tables/table_identity}
+
+\end{document}

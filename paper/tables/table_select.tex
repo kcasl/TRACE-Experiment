@@ -1,0 +1,23 @@
+\begin{table}[t]
+\centering
+\caption{TRACE commits on the full oct21 THOR~5 teleport port ($N\ge 2$, planner extra $C$, $B_{\mathrm{ov}}{=}4$).
+$N{=}1$ uses the host score. A RETURN executes $i_{\mathrm{host}}$ among listed masks, not a look-again.}
+\label{tab:select}
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{lllrrrr}
+\toprule
+Host & Split & Source & Ev. & Ret. & Sel. & SR \\
+\midrule
+FILM & seen & Jev & 967 & 526 & 441 & 0.598 \\
+FILM & seen & OpenAI & 970 & 493 & 477 & \textbf{0.633} \\
+FILM & unseen & Jev & 891 & 592 & 299 & 0.638 \\
+FILM & unseen & OpenAI & 891 & 572 & 319 & \textbf{0.642} \\
+\midrule
+CAPEAM & seen & Jev & 966 & 515 & 451 & 0.623 \\
+CAPEAM & seen & OpenAI & 966 & 502 & 464 & \textbf{0.652} \\
+CAPEAM & unseen & Jev & 888 & 587 & 301 & 0.654 \\
+CAPEAM & unseen & OpenAI & 887 & 579 & 308 & \textbf{0.655} \\
+\bottomrule
+\end{tabular}
+\end{table}

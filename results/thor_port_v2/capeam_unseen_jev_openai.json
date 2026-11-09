@@ -1,0 +1,20 @@
+{
+  "host": "capeam",
+  "split": "valid_unseen",
+  "sources": {
+    "jev": {
+      "n": 100,
+      "sr": 0.91,
+      "pickup": 1.0,
+      "put": 0.91,
+      "api_errors": 0
+    },
+    "openai_decisions": {
+      "n": 100,
+      "sr": 0.91,
+      "pickup": 1.0,
+      "put": 0.91,
+      "api_errors": 0
+    }
+  }
+}

@@ -1,0 +1,226 @@
+{
+  "summary": {
+    "n": 3,
+    "jev_accuracy": 1.0,
+    "openai_accuracy": 1.0,
+    "top1_agree": 1.0,
+    "mean_l1": 0.36,
+    "trace_agree": {
+      "same_room_drawers": 1.0,
+      "far_fridge": 1.0,
+      "split_fridges": 1.0
+    }
+  },
+  "rows": [
+    {
+      "case": "visible_match",
+      "truth": 0,
+      "jev": {
+        "ok": true,
+        "skipped": null,
+        "error": null,
+        "p_identity": [
+          0.98,
+          0.0,
+          0.02
+        ],
+        "top": 0,
+        "identity_correct": true,
+        "decisions": {
+          "same_room_drawers": {
+            "trace": "SELECT 0",
+            "threshold_075": "SELECT 0",
+            "min_expected_regret": 0.04
+          },
+          "far_fridge": {
+            "trace": "SELECT 0",
+            "threshold_075": "SELECT 0",
+            "min_expected_regret": 0.04
+          },
+          "split_fridges": {
+            "trace": "SELECT 0",
+            "threshold_075": "SELECT 0",
+            "min_expected_regret": 0.24
+          }
+        }
+      },
+      "openai_decisions": {
+        "ok": true,
+        "skipped": null,
+        "error": null,
+        "p_identity": [
+          0.98,
+          0.01,
+          0.01
+        ],
+        "top": 0,
+        "identity_correct": true,
+        "decisions": {
+          "same_room_drawers": {
+            "trace": "SELECT 0",
+            "threshold_075": "SELECT 0",
+            "min_expected_regret": 0.04
+          },
+          "far_fridge": {
+            "trace": "SELECT 0",
+            "threshold_075": "SELECT 0",
+            "min_expected_regret": 0.04
+          },
+          "split_fridges": {
+            "trace": "SELECT 0",
+            "threshold_075": "SELECT 0",
+            "min_expected_regret": 0.24
+          }
+        }
+      },
+      "top1_agree": 1,
+      "both_correct": 1,
+      "l1": 0.02,
+      "trace_agree": {
+        "same_room_drawers": 1,
+        "far_fridge": 1,
+        "split_fridges": 1
+      }
+    },
+    {
+      "case": "reference_absent",
+      "truth": 2,
+      "jev": {
+        "ok": true,
+        "skipped": null,
+        "error": null,
+        "p_identity": [
+          0.11,
+          0.01,
+          0.88
+        ],
+        "top": 2,
+        "identity_correct": true,
+        "decisions": {
+          "same_room_drawers": {
+            "trace": "SELECT 0",
+            "threshold_075": "RETURN",
+            "min_expected_regret": 1.78
+          },
+          "far_fridge": {
+            "trace": "SELECT 0",
+            "threshold_075": "RETURN",
+            "min_expected_regret": 1.78
+          },
+          "split_fridges": {
+            "trace": "RETURN",
+            "threshold_075": "RETURN",
+            "min_expected_regret": 10.68
+          }
+        }
+      },
+      "openai_decisions": {
+        "ok": true,
+        "skipped": null,
+        "error": null,
+        "p_identity": [
+          0.38,
+          0.06,
+          0.56
+        ],
+        "top": 2,
+        "identity_correct": true,
+        "decisions": {
+          "same_room_drawers": {
+            "trace": "SELECT 0",
+            "threshold_075": "RETURN",
+            "min_expected_regret": 1.24
+          },
+          "far_fridge": {
+            "trace": "SELECT 0",
+            "threshold_075": "RETURN",
+            "min_expected_regret": 1.24
+          },
+          "split_fridges": {
+            "trace": "RETURN",
+            "threshold_075": "RETURN",
+            "min_expected_regret": 7.44
+          }
+        }
+      },
+      "top1_agree": 1,
+      "both_correct": 1,
+      "l1": 0.64,
+      "trace_agree": {
+        "same_room_drawers": 1,
+        "far_fridge": 1,
+        "split_fridges": 1
+      }
+    },
+    {
+      "case": "lookalike",
+      "truth": 0,
+      "jev": {
+        "ok": true,
+        "skipped": null,
+        "error": null,
+        "p_identity": [
+          0.74,
+          0.21,
+          0.05
+        ],
+        "top": 0,
+        "identity_correct": true,
+        "decisions": {
+          "same_room_drawers": {
+            "trace": "SELECT 0",
+            "threshold_075": "RETURN",
+            "min_expected_regret": 0.52
+          },
+          "far_fridge": {
+            "trace": "SELECT 0",
+            "threshold_075": "RETURN",
+            "min_expected_regret": 0.52
+          },
+          "split_fridges": {
+            "trace": "SELECT 0",
+            "threshold_075": "RETURN",
+            "min_expected_regret": 3.12
+          }
+        }
+      },
+      "openai_decisions": {
+        "ok": true,
+        "skipped": null,
+        "error": null,
+        "p_identity": [
+          0.95,
+          0.03,
+          0.02
+        ],
+        "top": 0,
+        "identity_correct": true,
+        "decisions": {
+          "same_room_drawers": {
+            "trace": "SELECT 0",
+            "threshold_075": "SELECT 0",
+            "min_expected_regret": 0.1
+          },
+          "far_fridge": {
+            "trace": "SELECT 0",
+            "threshold_075": "SELECT 0",
+            "min_expected_regret": 0.1
+          },
+          "split_fridges": {
+            "trace": "SELECT 0",
+            "threshold_075": "SELECT 0",
+            "min_expected_regret": 0.6
+          }
+        }
+      },
+      "top1_agree": 1,
+      "both_correct": 1,
+      "l1": 0.42,
+      "trace_agree": {
+        "same_room_drawers": 1,
+        "far_fridge": 1,
+        "split_fridges": 1
+      }
+    }
+  ]
+}

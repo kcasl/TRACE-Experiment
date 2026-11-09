@@ -1,0 +1,20 @@
+{
+  "host": "film",
+  "split": "valid_unseen",
+  "sources": {
+    "host": {
+      "n": 100,
+      "sr": 0.91,
+      "pickup": 1.0,
+      "put": 0.91,
+      "api_errors": 0
+    },
+    "oracle": {
+      "n": 100,
+      "sr": 0.91,
+      "pickup": 1.0,
+      "put": 0.91,
+      "api_errors": 0
+    }
+  }
+}
