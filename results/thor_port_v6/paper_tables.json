@@ -1,0 +1,442 @@
+{
+  "film/valid_seen": {
+    "n": 820,
+    "sr": {
+      "host": 0.5,
+      "oracle": 0.5085365853658537,
+      "jev": 0.5975609756097561,
+      "openai_decisions": 0.6329268292682927
+    },
+    "select": {
+      "jev": {
+        "n2": 967,
+        "sel": 441,
+        "ret": 526
+      },
+      "openai_decisions": {
+        "n2": 970,
+        "sel": 477,
+        "ret": 493
+      }
+    },
+    "vs": {
+      "jev": {
+        "put_diff": 109,
+        "gained": 81,
+        "lost": 1
+      },
+      "openai_decisions": {
+        "put_diff": 166,
+        "gained": 110,
+        "lost": 1
+      }
+    },
+    "cr": {
+      "host": {
+        "n": 583,
+        "CR": 2.7444253859348198,
+        "wrong": 0.0,
+        "return": 0.0
+      },
+      "always_return": {
+        "n": 586,
+        "CR": 3.7525597269624575,
+        "wrong": 0.0,
+        "return": 0.0
+      },
+      "jev": {
+        "n": 487,
+        "CR": 1.6694045174537988,
+        "wrong": 0.2587268993839836,
+        "return": 0.29774127310061604
+      },
+      "openai": {
+        "n": 487,
+        "CR": 3.0739219712525667,
+        "wrong": 0.37782340862423,
+        "return": 0.29774127310061604
+      }
+    },
+    "task": {
+      "pick_and_place_simple": {
+        "host": 0.5070422535211268,
+        "oracle": 0.5070422535211268,
+        "jev": 0.7676056338028169,
+        "openai_decisions": 0.8802816901408451,
+        "n": 142
+      },
+      "pick_and_place_with_movable_recep": {
+        "host": 0.43478260869565216,
+        "oracle": 0.43478260869565216,
+        "jev": 0.5391304347826087,
+        "openai_decisions": 0.6,
+        "n": 115
+      },
+      "pick_two_obj_and_place": {
+        "host": 0.04838709677419355,
+        "oracle": 0.07258064516129033,
+        "jev": 0.04838709677419355,
+        "openai_decisions": 0.04838709677419355,
+        "n": 124
+      },
+      "look_at_obj_in_light": {
+        "host": 1.0,
+        "oracle": 1.0,
+        "jev": 1.0,
+        "openai_decisions": 1.0,
+        "n": 94
+      },
+      "pick_clean_then_place_in_recep": {
+        "host": 0.7053571428571429,
+        "oracle": 0.7321428571428571,
+        "jev": 0.8125,
+        "openai_decisions": 0.8125,
+        "n": 112
+      },
+      "pick_heat_then_place_in_recep": {
+        "host": 0.06542056074766354,
+        "oracle": 0.07476635514018691,
+        "jev": 0.1308411214953271,
+        "openai_decisions": 0.1308411214953271,
+        "n": 107
+      },
+      "pick_cool_then_place_in_recep": {
+        "host": 0.8095238095238095,
+        "oracle": 0.8095238095238095,
+        "jev": 0.9047619047619048,
+        "openai_decisions": 0.9523809523809523,
+        "n": 126
+      }
+    }
+  },
+  "film/valid_unseen": {
+    "n": 821,
+    "sr": {
+      "host": 0.6138855054811205,
+      "oracle": 0.6211936662606578,
+      "jev": 0.6382460414129111,
+      "openai_decisions": 0.6419001218026796
+    },
+    "select": {
+      "jev": {
+        "n2": 891,
+        "sel": 299,
+        "ret": 592
+      },
+      "openai_decisions": {
+        "n2": 891,
+        "sel": 319,
+        "ret": 572
+      }
+    },
+    "vs": {
+      "jev": {
+        "put_diff": 35,
+        "gained": 21,
+        "lost": 1
+      },
+      "openai_decisions": {
+        "put_diff": 56,
+        "gained": 24,
+        "lost": 1
+      }
+    },
+    "cr": {
+      "host": {
+        "n": 547,
+        "CR": 0.43875685557586835,
+        "wrong": 0.0,
+        "return": 0.0
+      },
+      "always_return": {
+        "n": 553,
+        "CR": 3.674502712477396,
+        "wrong": 0.0,
+        "return": 0.0
+      },
+      "jev": {
+        "n": 448,
+        "CR": 1.3794642857142858,
+        "wrong": 0.09821428571428571,
+        "return": 0.39955357142857145
+      },
+      "openai": {
+        "n": 448,
+        "CR": 1.53125,
+        "wrong": 0.14285714285714285,
+        "return": 0.39285714285714285
+      }
+    },
+    "task": {
+      "pick_and_place_simple": {
+        "host": 0.52,
+        "oracle": 0.52,
+        "jev": 0.61,
+        "openai_decisions": 0.6,
+        "n": 100
+      },
+      "pick_and_place_with_movable_recep": {
+        "host": 0.3486238532110092,
+        "oracle": 0.3486238532110092,
+        "jev": 0.41284403669724773,
+        "openai_decisions": 0.42201834862385323,
+        "n": 109
+      },
+      "pick_two_obj_and_place": {
+        "host": 0.2222222222222222,
+        "oracle": 0.25925925925925924,
+        "jev": 0.25925925925925924,
+        "openai_decisions": 0.2962962962962963,
+        "n": 81
+      },
+      "look_at_obj_in_light": {
+        "host": 1.0,
+        "oracle": 1.0,
+        "jev": 1.0,
+        "openai_decisions": 1.0,
+        "n": 173
+      },
+      "pick_clean_then_place_in_recep": {
+        "host": 0.9203539823008849,
+        "oracle": 0.9203539823008849,
+        "jev": 0.9203539823008849,
+        "openai_decisions": 0.9203539823008849,
+        "n": 113
+      },
+      "pick_heat_then_place_in_recep": {
+        "host": 0.09558823529411764,
+        "oracle": 0.09558823529411764,
+        "jev": 0.10294117647058823,
+        "openai_decisions": 0.10294117647058823,
+        "n": 136
+      },
+      "pick_cool_then_place_in_recep": {
+        "host": 0.9724770642201835,
+        "oracle": 1.0,
+        "jev": 0.9724770642201835,
+        "openai_decisions": 0.9724770642201835,
+        "n": 109
+      }
+    }
+  },
+  "capeam/valid_seen": {
+    "n": 820,
+    "sr": {
+      "host": 0.5280487804878049,
+      "oracle": 0.5121951219512195,
+      "jev": 0.6231707317073171,
+      "openai_decisions": 0.6524390243902439
+    },
+    "select": {
+      "jev": {
+        "n2": 966,
+        "sel": 451,
+        "ret": 515
+      },
+      "openai_decisions": {
+        "n2": 966,
+        "sel": 464,
+        "ret": 502
+      }
+    },
+    "vs": {
+      "jev": {
+        "put_diff": 110,
+        "gained": 81,
+        "lost": 3
+      },
+      "openai_decisions": {
+        "put_diff": 147,
+        "gained": 106,
+        "lost": 4
+      }
+    },
+    "cr": {
+      "host": {
+        "n": 580,
+        "CR": 3.410344827586207,
+        "wrong": 0.2603448275862069,
+        "return": 0.0
+      },
+      "always_return": {
+        "n": 585,
+        "CR": 3.747008547008547,
+        "wrong": 0.0,
+        "return": 0.0
+      },
+      "jev": {
+        "n": 487,
+        "CR": 1.624229979466119,
+        "wrong": 0.27720739219712526,
+        "return": 0.2874743326488706
+      },
+      "openai": {
+        "n": 487,
+        "CR": 2.8603696098562628,
+        "wrong": 0.36960985626283366,
+        "return": 0.29568788501026694
+      }
+    },
+    "task": {
+      "pick_and_place_simple": {
+        "host": 0.5704225352112676,
+        "oracle": 0.5070422535211268,
+        "jev": 0.7676056338028169,
+        "openai_decisions": 0.8591549295774648,
+        "n": 142
+      },
+      "pick_and_place_with_movable_recep": {
+        "host": 0.391304347826087,
+        "oracle": 0.43478260869565216,
+        "jev": 0.5391304347826087,
+        "openai_decisions": 0.6086956521739131,
+        "n": 115
+      },
+      "pick_two_obj_and_place": {
+        "host": 0.0967741935483871,
+        "oracle": 0.07258064516129033,
+        "jev": 0.12096774193548387,
+        "openai_decisions": 0.12096774193548387,
+        "n": 124
+      },
+      "look_at_obj_in_light": {
+        "host": 1.0,
+        "oracle": 1.0,
+        "jev": 1.0,
+        "openai_decisions": 1.0,
+        "n": 94
+      },
+      "pick_clean_then_place_in_recep": {
+        "host": 0.8392857142857143,
+        "oracle": 0.7589285714285714,
+        "jev": 0.9196428571428571,
+        "openai_decisions": 0.9196428571428571,
+        "n": 112
+      },
+      "pick_heat_then_place_in_recep": {
+        "host": 0.04672897196261682,
+        "oracle": 0.07476635514018691,
+        "jev": 0.1308411214953271,
+        "openai_decisions": 0.12149532710280374,
+        "n": 107
+      },
+      "pick_cool_then_place_in_recep": {
+        "host": 0.8095238095238095,
+        "oracle": 0.8095238095238095,
+        "jev": 0.9047619047619048,
+        "openai_decisions": 0.9365079365079365,
+        "n": 126
+      }
+    }
+  },
+  "capeam/valid_unseen": {
+    "n": 821,
+    "sr": {
+      "host": 0.6285018270401949,
+      "oracle": 0.6211936662606578,
+      "jev": 0.6540803897685749,
+      "openai_decisions": 0.6552984165651644
+    },
+    "select": {
+      "jev": {
+        "n2": 888,
+        "sel": 301,
+        "ret": 587
+      },
+      "openai_decisions": {
+        "n2": 887,
+        "sel": 308,
+        "ret": 579
+      }
+    },
+    "vs": {
+      "jev": {
+        "put_diff": 55,
+        "gained": 22,
+        "lost": 1
+      },
+      "openai_decisions": {
+        "put_diff": 69,
+        "gained": 28,
+        "lost": 6
+      }
+    },
+    "cr": {
+      "host": {
+        "n": 529,
+        "CR": 1.9187145557655954,
+        "wrong": 0.3724007561436673,
+        "return": 0.0
+      },
+      "always_return": {
+        "n": 550,
+        "CR": 3.672727272727273,
+        "wrong": 0.0,
+        "return": 0.0
+      },
+      "jev": {
+        "n": 445,
+        "CR": 1.4741573033707864,
+        "wrong": 0.14606741573033707,
+        "return": 0.4
+      },
+      "openai": {
+        "n": 445,
+        "CR": 1.7393258426966292,
+        "wrong": 0.1842696629213483,
+        "return": 0.40224719101123596
+      }
+    },
+    "task": {
+      "pick_and_place_simple": {
+        "host": 0.67,
+        "oracle": 0.52,
+        "jev": 0.73,
+        "openai_decisions": 0.73,
+        "n": 100
+      },
+      "pick_and_place_with_movable_recep": {
+        "host": 0.4036697247706422,
+        "oracle": 0.3486238532110092,
+        "jev": 0.44954128440366975,
+        "openai_decisions": 0.44954128440366975,
+        "n": 109
+      },
+      "pick_two_obj_and_place": {
+        "host": 0.07407407407407407,
+        "oracle": 0.25925925925925924,
+        "jev": 0.19753086419753085,
+        "openai_decisions": 0.2222222222222222,
+        "n": 81
+      },
+      "look_at_obj_in_light": {
+        "host": 1.0,
+        "oracle": 1.0,
+        "jev": 1.0,
+        "openai_decisions": 1.0,
+        "n": 173
+      },
+      "pick_clean_then_place_in_recep": {
+        "host": 0.9203539823008849,
+        "oracle": 0.9203539823008849,
+        "jev": 0.9203539823008849,
+        "openai_decisions": 0.9203539823008849,
+        "n": 113
+      },
+      "pick_heat_then_place_in_recep": {
+        "host": 0.09558823529411764,
+        "oracle": 0.09558823529411764,
+        "jev": 0.09558823529411764,
+        "openai_decisions": 0.08823529411764706,
+        "n": 136
+      },
+      "pick_cool_then_place_in_recep": {
+        "host": 1.0,
+        "oracle": 1.0,
+        "jev": 1.0,
+        "openai_decisions": 1.0,
+        "n": 109
+      }
+    }
+  }
+}

@@ -1,0 +1,329 @@
+{
+  "failures": [],
+  "table": [
+    {
+      "host": "capeam",
+      "split": "valid_seen",
+      "source": "jev",
+      "n": 820,
+      "sr": 0.6146341463414634,
+      "pickup": 0.9914634146341463,
+      "put": 0.8170731707317073,
+      "api_errors": 0,
+      "by_task": {
+        "look_at_obj_in_light": {
+          "n": 94,
+          "sr": 1.0
+        },
+        "pick_and_place_simple": {
+          "n": 142,
+          "sr": 0.7605633802816901
+        },
+        "pick_and_place_with_movable_recep": {
+          "n": 114,
+          "sr": 0.5350877192982456
+        },
+        "pick_clean_then_place_in_recep": {
+          "n": 112,
+          "sr": 0.9196428571428571
+        },
+        "pick_cool_then_place_in_recep": {
+          "n": 125,
+          "sr": 0.904
+        },
+        "pick_heat_then_place_in_recep": {
+          "n": 107,
+          "sr": 0.12149532710280374
+        },
+        "pick_two_obj_and_place": {
+          "n": 124,
+          "sr": 0.0967741935483871
+        },
+        "unknown": {
+          "n": 2,
+          "sr": 0.0
+        }
+      }
+    },
+    {
+      "host": "capeam",
+      "split": "valid_seen",
+      "source": "openai_decisions",
+      "n": 820,
+      "sr": 0.6585365853658537,
+      "pickup": 0.9939024390243902,
+      "put": 0.8219512195121951,
+      "api_errors": 0,
+      "by_task": {
+        "look_at_obj_in_light": {
+          "n": 94,
+          "sr": 1.0
+        },
+        "pick_and_place_simple": {
+          "n": 142,
+          "sr": 0.8802816901408451
+        },
+        "pick_and_place_with_movable_recep": {
+          "n": 115,
+          "sr": 0.6086956521739131
+        },
+        "pick_clean_then_place_in_recep": {
+          "n": 112,
+          "sr": 0.9196428571428571
+        },
+        "pick_cool_then_place_in_recep": {
+          "n": 126,
+          "sr": 0.9444444444444444
+        },
+        "pick_heat_then_place_in_recep": {
+          "n": 107,
+          "sr": 0.11214953271028037
+        },
+        "pick_two_obj_and_place": {
+          "n": 124,
+          "sr": 0.13709677419354838
+        }
+      }
+    },
+    {
+      "host": "capeam",
+      "split": "valid_unseen",
+      "source": "jev",
+      "n": 821,
+      "sr": 0.6492082825822169,
+      "pickup": 0.9890377588306942,
+      "put": 0.7393422655298416,
+      "api_errors": 0,
+      "by_task": {
+        "look_at_obj_in_light": {
+          "n": 173,
+          "sr": 1.0
+        },
+        "pick_and_place_simple": {
+          "n": 100,
+          "sr": 0.73
+        },
+        "pick_and_place_with_movable_recep": {
+          "n": 109,
+          "sr": 0.44954128440366975
+        },
+        "pick_clean_then_place_in_recep": {
+          "n": 113,
+          "sr": 0.9203539823008849
+        },
+        "pick_cool_then_place_in_recep": {
+          "n": 109,
+          "sr": 0.9724770642201835
+        },
+        "pick_heat_then_place_in_recep": {
+          "n": 136,
+          "sr": 0.11029411764705882
+        },
+        "pick_two_obj_and_place": {
+          "n": 81,
+          "sr": 0.16049382716049382
+        }
+      }
+    },
+    {
+      "host": "capeam",
+      "split": "valid_unseen",
+      "source": "openai_decisions",
+      "n": 821,
+      "sr": 0.6419001218026796,
+      "pickup": 0.9890377588306942,
+      "put": 0.7405602923264312,
+      "api_errors": 0,
+      "by_task": {
+        "look_at_obj_in_light": {
+          "n": 173,
+          "sr": 1.0
+        },
+        "pick_and_place_simple": {
+          "n": 100,
+          "sr": 0.73
+        },
+        "pick_and_place_with_movable_recep": {
+          "n": 109,
+          "sr": 0.46788990825688076
+        },
+        "pick_clean_then_place_in_recep": {
+          "n": 113,
+          "sr": 0.9203539823008849
+        },
+        "pick_cool_then_place_in_recep": {
+          "n": 109,
+          "sr": 0.9724770642201835
+        },
+        "pick_heat_then_place_in_recep": {
+          "n": 136,
+          "sr": 0.07352941176470588
+        },
+        "pick_two_obj_and_place": {
+          "n": 81,
+          "sr": 0.12345679012345678
+        }
+      }
+    },
+    {
+      "host": "film",
+      "split": "valid_seen",
+      "source": "jev",
+      "n": 820,
+      "sr": 0.6146341463414634,
+      "pickup": 0.9939024390243902,
+      "put": 0.8207317073170731,
+      "api_errors": 0,
+      "by_task": {
+        "look_at_obj_in_light": {
+          "n": 94,
+          "sr": 1.0
+        },
+        "pick_and_place_simple": {
+          "n": 142,
+          "sr": 0.7746478873239436
+        },
+        "pick_and_place_with_movable_recep": {
+          "n": 115,
+          "sr": 0.5391304347826087
+        },
+        "pick_clean_then_place_in_recep": {
+          "n": 112,
+          "sr": 0.8660714285714286
+        },
+        "pick_cool_then_place_in_recep": {
+          "n": 126,
+          "sr": 0.9047619047619048
+        },
+        "pick_heat_then_place_in_recep": {
+          "n": 107,
+          "sr": 0.14018691588785046
+        },
+        "pick_two_obj_and_place": {
+          "n": 124,
+          "sr": 0.0967741935483871
+        }
+      }
+    },
+    {
+      "host": "film",
+      "split": "valid_seen",
+      "source": "openai_decisions",
+      "n": 820,
+      "sr": 0.6487804878048781,
+      "pickup": 0.9939024390243902,
+      "put": 0.8256097560975609,
+      "api_errors": 0,
+      "by_task": {
+        "look_at_obj_in_light": {
+          "n": 94,
+          "sr": 1.0
+        },
+        "pick_and_place_simple": {
+          "n": 142,
+          "sr": 0.8802816901408451
+        },
+        "pick_and_place_with_movable_recep": {
+          "n": 115,
+          "sr": 0.6086956521739131
+        },
+        "pick_clean_then_place_in_recep": {
+          "n": 112,
+          "sr": 0.8660714285714286
+        },
+        "pick_cool_then_place_in_recep": {
+          "n": 126,
+          "sr": 0.9365079365079365
+        },
+        "pick_heat_then_place_in_recep": {
+          "n": 107,
+          "sr": 0.12149532710280374
+        },
+        "pick_two_obj_and_place": {
+          "n": 124,
+          "sr": 0.12096774193548387
+        }
+      }
+    },
+    {
+      "host": "film",
+      "split": "valid_unseen",
+      "source": "jev",
+      "n": 821,
+      "sr": 0.6358099878197321,
+      "pickup": 0.9890377588306942,
+      "put": 0.7429963459196103,
+      "api_errors": 0,
+      "by_task": {
+        "look_at_obj_in_light": {
+          "n": 173,
+          "sr": 1.0
+        },
+        "pick_and_place_simple": {
+          "n": 100,
+          "sr": 0.61
+        },
+        "pick_and_place_with_movable_recep": {
+          "n": 109,
+          "sr": 0.43119266055045874
+        },
+        "pick_clean_then_place_in_recep": {
+          "n": 113,
+          "sr": 0.9203539823008849
+        },
+        "pick_cool_then_place_in_recep": {
+          "n": 109,
+          "sr": 0.9724770642201835
+        },
+        "pick_heat_then_place_in_recep": {
+          "n": 136,
+          "sr": 0.09558823529411764
+        },
+        "pick_two_obj_and_place": {
+          "n": 81,
+          "sr": 0.2222222222222222
+        }
+      }
+    },
+    {
+      "host": "film",
+      "split": "valid_unseen",
+      "source": "openai_decisions",
+      "n": 821,
+      "sr": 0.633373934226553,
+      "pickup": 0.9890377588306942,
+      "put": 0.7429963459196103,
+      "api_errors": 0,
+      "by_task": {
+        "look_at_obj_in_light": {
+          "n": 173,
+          "sr": 1.0
+        },
+        "pick_and_place_simple": {
+          "n": 100,
+          "sr": 0.61
+        },
+        "pick_and_place_with_movable_recep": {
+          "n": 109,
+          "sr": 0.43119266055045874
+        },
+        "pick_clean_then_place_in_recep": {
+          "n": 113,
+          "sr": 0.9203539823008849
+        },
+        "pick_cool_then_place_in_recep": {
+          "n": 109,
+          "sr": 0.9724770642201835
+        },
+        "pick_heat_then_place_in_recep": {
+          "n": 136,
+          "sr": 0.10294117647058823
+        },
+        "pick_two_obj_and_place": {
+          "n": 81,
+          "sr": 0.18518518518518517
+        }
+      }
+    }
+  ]
+}
